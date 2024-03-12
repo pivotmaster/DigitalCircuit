@@ -1,0 +1,1 @@
+rm -rf Lab01 && mkdir Lab01 && cp Neuron.cpp ./Lab01/Neuron.cpp && cp Neural_Network.h ./Lab01/Neural_Network.h
