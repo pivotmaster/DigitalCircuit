@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1711619876.573585782, "rt":1.11, "ut":0.10, "st":0.05}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1711619875.973563700}
+{"VCS_COMP_START_TIME": 1711619875.973563700}
+{"VCS_COMP_END_TIME": 1711619877.766636347}
+{"VCS_USER_OPTIONS": "-timescale=1ns/1fs -j4 -sverilog +v2k -full64 -Mupdate -R -debug_access+all -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v -f filelist.f -o simv -l vcs.log +define+RTL +define+ +notimingchecks"}
+{"vcs1": {"peak_mem": 313732}}

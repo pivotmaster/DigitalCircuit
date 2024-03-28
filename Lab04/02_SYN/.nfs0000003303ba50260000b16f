@@ -1,0 +1,47 @@
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+ 
+****************************************
+Report : area
+Design : LCD_CTRL
+Version: T-2022.03
+Date   : Wed Mar 27 21:55:32 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'LCD_CTRL' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    gtech (File: /usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db)
+
+Number of ports:                          178
+Number of nets:                           804
+Number of cells:                          607
+Number of combinational cells:            287
+Number of sequential cells:               294
+Number of macros/black boxes:               0
+Number of buf/inv:                        130
+Number of references:                      20
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1

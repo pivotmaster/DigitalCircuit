@@ -1,0 +1,270 @@
+75             //CMD1: load
+42
+18
+30
+eb
+af
+61
+49
+93
+75             //CMD2: load
+42
+18
+30
+eb
+af
+61
+49
+93
+36             //CMD3: shift up
+e7
+f0
+75
+42
+18
+30
+eb
+af
+75             //CMD4: shift down
+42
+18
+30
+eb
+af
+61
+49
+93
+32             //CMD5: shift left
+75
+42
+57
+30
+eb
+11
+61
+49
+75             //CMD6: shift right
+42
+18
+30
+eb
+af
+61
+49
+93
+32             //CMD7: shift left
+75
+42
+57
+30
+eb
+11
+61
+49
+57             //CMD8: shift down
+30
+eb
+11
+61
+49
+67
+a0
+5
+57             //CMD9: shift down
+30
+eb
+11
+61
+49
+67
+a0
+5
+57             //CMD10: shift left
+30
+eb
+11
+61
+49
+67
+a0
+5
+57             //CMD11: shift left
+30
+eb
+11
+61
+49
+67
+a0
+5
+75             //CMD12: load
+42
+18
+30
+eb
+af
+61
+49
+93
+42             //CMD13: shift right
+18
+20
+eb
+af
+ec
+49
+93
+22
+42             //CMD14: shift right
+18
+20
+eb
+af
+ec
+49
+93
+22
+e7             //CMD15: shift up
+f0
+55
+42
+18
+20
+eb
+af
+ec
+e7             //CMD16: shift up
+f0
+55
+42
+18
+20
+eb
+af
+ec
+e7             //CMD17: shift right
+f0
+55
+42
+18
+20
+eb
+af
+ec
+e7             //CMD18: shift up
+f0
+55
+42
+18
+20
+eb
+af
+ec
+42             //CMD19: shift down
+18
+20
+eb
+af
+ec
+49
+93
+22
+eb             //CMD20: shift down
+af
+ec
+49
+93
+22
+5
+c5
+28
+eb             //CMD21: shift down
+af
+ec
+49
+93
+22
+5
+c5
+28
+eb             //CMD22: shift right
+af
+ec
+49
+93
+22
+5
+c5
+28
+eb             //CMD23: shift right
+af
+ec
+49
+93
+22
+5
+c5
+28
+42             //CMD24: shift up
+18
+20
+eb
+af
+ec
+49
+93
+22
+e7             //CMD25: shift up
+f0
+55
+42
+18
+20
+eb
+af
+ec
+e7             //CMD26: shift up
+f0
+55
+42
+18
+20
+eb
+af
+ec
+36             //CMD27: shift left
+e7
+f0
+75
+42
+18
+30
+eb
+af
+e7             //CMD28: shift right
+f0
+55
+42
+18
+20
+eb
+af
+ec
+36             //CMD29: shift left
+e7
+f0
+75
+42
+18
+30
+eb
+af
+ff             //CMD30: shift left
+36
+e7
+32
+75
+42
+57
+30
+eb
