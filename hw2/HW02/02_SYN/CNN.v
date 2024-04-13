@@ -107,21 +107,22 @@ reg ram_ov;
 reg deactivate_ReLU;
 reg signed [15:0] ram_in;
 reg signed [15:0] ram_od;
+
+//
 always@(posedge clk) begin
     if (opt == 1'b0) begin
-        deactivate_ReLU = 1'b0;
+        deactivate_ReLU <= 1'b0;
     end else if (opt == 1'b1) begin
-        deactivate_ReLU = 1'b1;
+        deactivate_ReLU <= 1'b1;
     end
 end
-//reset output
-always@(negedge rst_n) begin
-    out_data <= 16'd0;
-    out_valid <= 1'd0;
-end
 
-always@(posedge clk) begin
-    if (current_state == IDLE) begin
+always@(posedge clk or negedge rst_n) begin
+    if (rst_n == 1'd0) begin
+        out_data <= 16'd0;
+        out_valid <= 1'd0;
+    end
+    else if (current_state == IDLE) begin
         in_x <= 3'd0;
         in_y <= 3'd0;
         out_x <= 1'd0;

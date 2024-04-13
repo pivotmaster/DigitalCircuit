@@ -1,0 +1,114 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : CNN
+Version: T-2022.03
+Date   : Sat Apr 13 17:15:16 2024
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: in_data[2] (input port clocked by clk)
+  Endpoint: ram_in_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CNN                enG200K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    50.00      50.00 f
+  in_data[2] (in)                          0.00      50.00 f
+  U20172/O (MOAI1S)                        0.48      50.48 f
+  ram_in_reg[2]/D (QDFFS)                  0.00      50.48 f
+  data arrival time                                  50.48
+
+  clock clk (rise edge)                  100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.10      99.90
+  ram_in_reg[2]/CK (QDFFS)                 0.00      99.90 r
+  library setup time                      -0.21      99.69
+  data required time                                 99.69
+  -----------------------------------------------------------
+  data required time                                 99.69
+  data arrival time                                 -50.48
+  -----------------------------------------------------------
+  slack (MET)                                        49.21
+
+
+  Startpoint: in_data[1] (input port clocked by clk)
+  Endpoint: ram_in_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CNN                enG200K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    50.00      50.00 f
+  in_data[1] (in)                          0.00      50.00 f
+  U20171/O (MOAI1S)                        0.48      50.48 f
+  ram_in_reg[1]/D (QDFFS)                  0.00      50.48 f
+  data arrival time                                  50.48
+
+  clock clk (rise edge)                  100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.10      99.90
+  ram_in_reg[1]/CK (QDFFS)                 0.00      99.90 r
+  library setup time                      -0.21      99.69
+  data required time                                 99.69
+  -----------------------------------------------------------
+  data required time                                 99.69
+  data arrival time                                 -50.48
+  -----------------------------------------------------------
+  slack (MET)                                        49.21
+
+
+  Startpoint: in_data[0] (input port clocked by clk)
+  Endpoint: ram_in_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CNN                enG200K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    50.00      50.00 f
+  in_data[0] (in)                          0.00      50.00 f
+  U20170/O (MOAI1S)                        0.48      50.48 f
+  ram_in_reg[0]/D (QDFFS)                  0.00      50.48 f
+  data arrival time                                  50.48
+
+  clock clk (rise edge)                  100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.10      99.90
+  ram_in_reg[0]/CK (QDFFS)                 0.00      99.90 r
+  library setup time                      -0.21      99.69
+  data required time                                 99.69
+  -----------------------------------------------------------
+  data required time                                 99.69
+  data arrival time                                 -50.48
+  -----------------------------------------------------------
+  slack (MET)                                        49.21
+
+
+1

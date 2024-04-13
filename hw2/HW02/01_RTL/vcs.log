@@ -4,7 +4,7 @@ vcs.log -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab /usr
 +define+RTL +notimingchecks
 *** Using c compiler gcc instead of cc ...
                          Chronologic VCS (TM)
-         Version T-2022.06_Full64 -- Sat Apr 13 16:06:00 2024
+         Version T-2022.06_Full64 -- Sat Apr 13 17:07:58 2024
 
                     Copyright (c) 1991 - 2022 Synopsys, Inc.
    This software and the associated documentation are proprietary to Synopsys,
@@ -40,25 +40,22 @@ Note-[VCS_PARAL] Parallel code-gen enabled
 recompiling module TESTBED
 make[1]: Entering directory `/RAID2/COURSE/DCS/DCS111/HW02/01_RTL/csrc'
 rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
-ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
-rm -f _cuarc0.so
 if [ -x ../simv ]; then chmod a-x ../simv; fi
 g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
 -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib \
--Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _246264_archive_1.so _246292_archive_1.so \
-_prev_archive_1.so _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o \
-rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs \
-/usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a    -lvcsnew -lsimprofile \
--luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
--lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o \
-/usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/pli.a -ldl -lm  -lc -lpthread \
--ldl 
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _70563_archive_1.so \
+_70586_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a \
+-lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/pli.a \
+-ldl -lm  -lc -lpthread -ldl 
 ../simv up to date
 make[1]: Leaving directory `/RAID2/COURSE/DCS/DCS111/HW02/01_RTL/csrc'
 Command: /RAID2/COURSE/DCS/DCS111/HW02/01_RTL/./simv +v2k +libext+.v -a vcs.log +define+RTL +notimingchecks
 Chronologic VCS simulator copyright 1991-2022
 Contains Synopsys proprietary information.
-Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 13 16:06 2024
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 13 17:08 2024
 *Verdi* Loading libsscore_vcs201906.so
 FSDB Dumper for VCS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
 (C) 1996 - 2019 by Synopsys, Inc.
@@ -68,7 +65,6 @@ FSDB Dumper for VCS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
 *  may cause abnormal behavior, please contact Synopsys support for   *
 *  assistance.                                                        *
 ***********************************************************************
-*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
 *Verdi* : Create FSDB file 'CNN.fsdb'
 *Verdi* : Begin traversing the scopes, layer (0).
 *Verdi* : Enable +mda dumping.
@@ -1083,6 +1079,6 @@ $finish called from file "PATTERN.v", line 487.
 $finish at simulation time            570095000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 5700950000 ps
-CPU Time:      0.680 seconds;       Data structure size:   0.0Mb
-Sat Apr 13 16:06:03 2024
-CPU time: .512 seconds to compile + .386 seconds to elab + .342 seconds to link + .719 seconds in simulation
+CPU Time:      0.820 seconds;       Data structure size:   0.0Mb
+Sat Apr 13 17:08:05 2024
+CPU time: .549 seconds to compile + .460 seconds to elab + .396 seconds to link + .858 seconds in simulation

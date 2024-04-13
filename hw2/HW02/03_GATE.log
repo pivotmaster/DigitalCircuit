@@ -1,0 +1,2495 @@
+vcs -timescale=1ns/1fs -j8                -sverilog +v2k -full64 -Mupdate -R -debug_access+all -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v -f "filelist.f"	 -o "simv"      	 -l "vcs.log"      	 -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a -v ~iclabTA01/UMC018_CBDK/CIC/Verilog/fsa0m_a_generic_core_30.lib.src +define+GATE +neg_tchk +nowarnNTCDSN
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sat Apr 13 17:15:42 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TESTBED.v'
+Parsing included file 'PATTERN.v'.
+Back to file 'TESTBED.v'.
+Parsing included file 'CNN_SYN.v'.
+Back to file 'TESTBED.v'.
+Parsing library file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/Verilog/fsa0m_a_generic_core_30.lib.src'
+Top Level Modules:
+       TESTBED
+TimeScale is 10 ps / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27027
+CNN, "FA1S U6066( .A (n44412),  .B (n4485),  .CI (n6536),  .CO (n4486));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27028
+CNN, "FA1S U6067( .A (n6538),  .B (n44406),  .CI (n4486),  .CO (n4487));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27029
+CNN, "FA1S U6068( .A (n6540),  .B (n44400),  .CI (n4487),  .CO (n4488));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27030
+CNN, "FA1S U6069( .A (n6542),  .B (n44394),  .CI (n4488),  .CO (n4489));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27031
+CNN, "FA1S U6070( .A (n6544),  .B (n44388),  .CI (n4489),  .CO (n4490));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27032
+CNN, "FA1S U6071( .A (n6546),  .B (n44382),  .CI (n4490),  .CO (n4491));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27033
+CNN, "FA1S U6072( .A (n6548),  .B (n44376),  .CI (n4491),  .CO (n4492));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27034
+CNN, "FA1S U6073( .A (n6550),  .B (n6672),  .CI (n4492),  .CO (n4493));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27035
+CNN, "FA1S U6074( .A (n6552),  .B (n37954),  .CI (n4493),  .CO (n4494));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27036
+CNN, "FA1S U6075( .A (n6554),  .B (n37948),  .CI (n4494),  .CO (n4495));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27037
+CNN, "FA1S U6076( .A (n6556),  .B (n37941),  .CI (n4495),  .CO (n4496));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27038
+CNN, "FA1S U6077( .A (n6558),  .B (n37935),  .CI (n4496),  .CO (n4497));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27039
+CNN, "FA1S U6078( .A (n6560),  .B (n37929),  .CI (n4497),  .CO (n4498));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 27040
+CNN, "FA1S U6079( .A (n6562),  .B (n37923),  .CI (n4498),  .CO (n4499));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28261
+CNN, "FA1S U7230( .A (n44410),  .B (n5541),  .CI (n44416),  .CO (n5542));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28262
+CNN, "FA1S U7231( .A (n44409),  .B (n44404),  .CI (n5542),  .CO (n5543));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28263
+CNN, "FA1S U7232( .A (n44403),  .B (n44398),  .CI (n5543),  .CO (n5544));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28264
+CNN, "FA1S U7233( .A (n44397),  .B (n44392),  .CI (n5544),  .CO (n5545));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28265
+CNN, "FA1S U7234( .A (n44391),  .B (n44386),  .CI (n5545),  .CO (n5546));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28266
+CNN, "FA1S U7235( .A (n44385),  .B (n44380),  .CI (n5546),  .CO (n5547));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28267
+CNN, "FA1S U7236( .A (n44379),  .B (n44374),  .CI (n5547),  .CO (n5548));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28268
+CNN, "FA1S U7237( .A (n6673),  .B (n6675),  .CI (n5548),  .CO (n5549));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28269
+CNN, "FA1S U7238( .A (n37957),  .B (n37952),  .CI (n5549),  .CO (n5550));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28270
+CNN, "FA1S U7239( .A (n37951),  .B (n37946),  .CI (n5550),  .CO (n5551));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28271
+CNN, "FA1S U7240( .A (n37944),  .B (n37939),  .CI (n5551),  .CO (n5552));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28272
+CNN, "FA1S U7241( .A (n37938),  .B (n37933),  .CI (n5552),  .CO (n5553));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28273
+CNN, "FA1S U7242( .A (n37932),  .B (n37927),  .CI (n5553),  .CO (n5554));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 28274
+CNN, "FA1S U7243( .A (n37926),  .B (n37921),  .CI (n5554),  .CO (n5555));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29279
+CNN, "FA1S U8204( .A (n6536),  .B (n44411),  .CI (n6535),  .CO (n6537));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29280
+CNN, "FA1S U8205( .A (n6538),  .B (n44405),  .CI (n6537),  .CO (n6539));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29281
+CNN, "FA1S U8206( .A (n6540),  .B (n44399),  .CI (n6539),  .CO (n6541));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29282
+CNN, "FA1S U8207( .A (n6542),  .B (n44393),  .CI (n6541),  .CO (n6543));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29283
+CNN, "FA1S U8208( .A (n6544),  .B (n44387),  .CI (n6543),  .CO (n6545));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29284
+CNN, "FA1S U8209( .A (n6546),  .B (n44381),  .CI (n6545),  .CO (n6547));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29285
+CNN, "FA1S U8210( .A (n6548),  .B (n44375),  .CI (n6547),  .CO (n6549));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29286
+CNN, "FA1S U8211( .A (n6550),  .B (n6674),  .CI (n6549),  .CO (n6551));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29287
+CNN, "FA1S U8212( .A (n6552),  .B (n37953),  .CI (n6551),  .CO (n6553));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29288
+CNN, "FA1S U8213( .A (n6554),  .B (n37947),  .CI (n6553),  .CO (n6555));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29289
+CNN, "FA1S U8214( .A (n6556),  .B (n37940),  .CI (n6555),  .CO (n6557));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29290
+CNN, "FA1S U8215( .A (n6558),  .B (n37934),  .CI (n6557),  .CO (n6559));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29291
+CNN, "FA1S U8216( .A (n6560),  .B (n37928),  .CI (n6559),  .CO (n6561));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29300
+CNN, "FA1S U8224( .A (n44416),  .B (n44411),  .CI (n6567),  .CO (n6568));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29301
+CNN, "FA1S U8225( .A (n44409),  .B (n44405),  .CI (n6568),  .CO (n6569));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29302
+CNN, "FA1S U8226( .A (n44403),  .B (n44399),  .CI (n6569),  .CO (n6570));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29303
+CNN, "FA1S U8227( .A (n44397),  .B (n44393),  .CI (n6570),  .CO (n6571));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29304
+CNN, "FA1S U8228( .A (n44391),  .B (n44387),  .CI (n6571),  .CO (n6572));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29305
+CNN, "FA1S U8229( .A (n44385),  .B (n44381),  .CI (n6572),  .CO (n6573));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29306
+CNN, "FA1S U8230( .A (n44379),  .B (n44375),  .CI (n6573),  .CO (n6574));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29307
+CNN, "FA1S U8231( .A (n6673),  .B (n6674),  .CI (n6574),  .CO (n6575));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29308
+CNN, "FA1S U8232( .A (n37957),  .B (n37953),  .CI (n6575),  .CO (n6576));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29309
+CNN, "FA1S U8233( .A (n37951),  .B (n37947),  .CI (n6576),  .CO (n6577));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29310
+CNN, "FA1S U8234( .A (n37944),  .B (n37940),  .CI (n6577),  .CO (n6578));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29311
+CNN, "FA1S U8235( .A (n37938),  .B (n37934),  .CI (n6578),  .CO (n6579));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29312
+CNN, "FA1S U8236( .A (n37932),  .B (n37928),  .CI (n6579),  .CO (n6580));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29317
+CNN, "FA1S U8241( .A (n44412),  .B (n6584),  .CI (n44416),  .CO (n6585));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29318
+CNN, "FA1S U8242( .A (n44409),  .B (n44406),  .CI (n6585),  .CO (n6586));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29319
+CNN, "FA1S U8243( .A (n44403),  .B (n44400),  .CI (n6586),  .CO (n6587));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29320
+CNN, "FA1S U8244( .A (n44397),  .B (n44394),  .CI (n6587),  .CO (n6588));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29321
+CNN, "FA1S U8245( .A (n44391),  .B (n44388),  .CI (n6588),  .CO (n6589));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29322
+CNN, "FA1S U8246( .A (n44385),  .B (n44382),  .CI (n6589),  .CO (n6590));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29323
+CNN, "FA1S U8247( .A (n44379),  .B (n44376),  .CI (n6590),  .CO (n6591));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29324
+CNN, "FA1S U8248( .A (n6673),  .B (n6672),  .CI (n6591),  .CO (n6592));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29325
+CNN, "FA1S U8249( .A (n37957),  .B (n37954),  .CI (n6592),  .CO (n6593));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29326
+CNN, "FA1S U8250( .A (n37951),  .B (n37948),  .CI (n6593),  .CO (n6594));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29327
+CNN, "FA1S U8251( .A (n37944),  .B (n37941),  .CI (n6594),  .CO (n6595));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29328
+CNN, "FA1S U8252( .A (n37938),  .B (n37935),  .CI (n6595),  .CO (n6596));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29329
+CNN, "FA1S U8253( .A (n37932),  .B (n37929),  .CI (n6596),  .CO (n6597));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29330
+CNN, "FA1S U8254( .A (n37926),  .B (n37923),  .CI (n6597),  .CO (n6598));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29347
+CNN, "FA1S U8271( .A (n6609),  .B (n44405),  .CI (n6608),  .CO (n6610));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29348
+CNN, "FA1S U8272( .A (n6611),  .B (n44399),  .CI (n6610),  .CO (n6612));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29349
+CNN, "FA1S U8273( .A (n6613),  .B (n44393),  .CI (n6612),  .CO (n6614));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29350
+CNN, "FA1S U8274( .A (n6615),  .B (n44387),  .CI (n6614),  .CO (n6616));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29351
+CNN, "FA1S U8275( .A (n6617),  .B (n44381),  .CI (n6616),  .CO (n6618));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29352
+CNN, "FA1S U8276( .A (n6619),  .B (n44375),  .CI (n6618),  .CO (n6620));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29353
+CNN, "FA1S U8277( .A (n6621),  .B (n6674),  .CI (n6620),  .CO (n6622));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29354
+CNN, "FA1S U8278( .A (n6623),  .B (n37953),  .CI (n6622),  .CO (n6624));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29355
+CNN, "FA1S U8279( .A (n6625),  .B (n37947),  .CI (n6624),  .CO (n6626));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29356
+CNN, "FA1S U8280( .A (n6627),  .B (n37940),  .CI (n6626),  .CO (n6628));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29357
+CNN, "FA1S U8281( .A (n6629),  .B (n37934),  .CI (n6628),  .CO (n6630));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 29358
+CNN, "FA1S U8282( .A (n6631),  .B (n37928),  .CI (n6630),  .CO (n6632));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32725
+CNN, "FA1S U11461( .A (n27662),  .B (n27658),  .CI (n9622),  .CO (n9623));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32726
+CNN, "FA1S U11462( .A (n27656),  .B (n27652),  .CI (n9623),  .CO (n9624));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32727
+CNN, "FA1S U11463( .A (n27650),  .B (n27646),  .CI (n9624),  .CO (n9625));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32728
+CNN, "FA1S U11464( .A (n44373),  .B (n44367),  .CI (n9625),  .CO (n9626));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32729
+CNN, "FA1S U11465( .A (n44363),  .B (n44359),  .CI (n9626),  .CO (n9627));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32730
+CNN, "FA1S U11466( .A (n44357),  .B (n44353),  .CI (n9627),  .CO (n9628));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32731
+CNN, "FA1S U11467( .A (n44351),  .B (n44347),  .CI (n9628),  .CO (n9629));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32732
+CNN, "FA1S U11468( .A (n44345),  .B (n44341),  .CI (n9629),  .CO (n9630));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32733
+CNN, "FA1S U11469( .A (n44339),  .B (n44335),  .CI (n9630),  .CO (n9631));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32734
+CNN, "FA1S U11470( .A (n44333),  .B (n44329),  .CI (n9631),  .CO (n9632));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32735
+CNN, "FA1S U11471( .A (n10752),  .B (n10835),  .CI (n9632),  .CO (n9633));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32736
+CNN, "FA1S U11472( .A (n44327),  .B (n44323),  .CI (n9633),  .CO (n9634));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 32737
+CNN, "FA1S U11473( .A (n44321),  .B (n44317),  .CI (n9634),  .CO (n9635));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34120
+CNN, "FA1S U12566( .A (n27663),  .B (n10649),  .CI (n10648),  .CO (n10650));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34121
+CNN, "FA1S U12567( .A (n10762),  .B (n27657),  .CI (n10650),  .CO (n10651));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34122
+CNN, "FA1S U12568( .A (n10764),  .B (n27651),  .CI (n10651),  .CO (n10652));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34123
+CNN, "FA1S U12569( .A (n10766),  .B (n27645),  .CI (n10652),  .CO (n10653));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34124
+CNN, "FA1S U12570( .A (n10768),  .B (n44364),  .CI (n10653),  .CO (n10654));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34125
+CNN, "FA1S U12571( .A (n10770),  .B (n44358),  .CI (n10654),  .CO (n10655));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34126
+CNN, "FA1S U12572( .A (n10772),  .B (n44352),  .CI (n10655),  .CO (n10656));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34127
+CNN, "FA1S U12573( .A (n10774),  .B (n44346),  .CI (n10656),  .CO (n10657));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34128
+CNN, "FA1S U12574( .A (n10776),  .B (n44340),  .CI (n10657),  .CO (n10658));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34129
+CNN, "FA1S U12575( .A (n10778),  .B (n44334),  .CI (n10658),  .CO (n10659));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34140
+CNN, "FA1S U12584( .A (n10667),  .B (n44323),  .CI (n10819),  .CO (n10668));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34141
+CNN, "FA1S U12585( .A (n10822),  .B (n44317),  .CI (n10668),  .CO (n10669));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34150
+CNN, "FA1S U12594( .A (n27663),  .B (n10672),  .CI (n27668),  .CO (n10673));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34151
+CNN, "FA1S U12595( .A (n27662),  .B (n27657),  .CI (n10673),  .CO (n10674));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34152
+CNN, "FA1S U12596( .A (n27656),  .B (n27651),  .CI (n10674),  .CO (n10675));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34153
+CNN, "FA1S U12597( .A (n27650),  .B (n27645),  .CI (n10675),  .CO (n10676));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34154
+CNN, "FA1S U12598( .A (n44373),  .B (n44364),  .CI (n10676),  .CO (n10677));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34155
+CNN, "FA1S U12599( .A (n44363),  .B (n44358),  .CI (n10677),  .CO (n10678));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34156
+CNN, "FA1S U12600( .A (n44357),  .B (n44352),  .CI (n10678),  .CO (n10679));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34157
+CNN, "FA1S U12601( .A (n44351),  .B (n44346),  .CI (n10679),  .CO (n10680));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34158
+CNN, "FA1S U12602( .A (n44345),  .B (n44340),  .CI (n10680),  .CO (n10681));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34159
+CNN, "FA1S U12603( .A (n44339),  .B (n44334),  .CI (n10681),  .CO (n10682));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34164
+CNN, "FA1S U12608( .A (n44327),  .B (n44322),  .CI (n10686),  .CO (n10687));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34165
+CNN, "FA1S U12609( .A (n44321),  .B (n44316),  .CI (n10687),  .CO (n10688));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34266
+CNN, "FA1S U12688( .A (n27668),  .B (n27665),  .CI (n10740),  .CO (n10741));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34267
+CNN, "FA1S U12689( .A (n27662),  .B (n27659),  .CI (n10741),  .CO (n10742));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34268
+CNN, "FA1S U12690( .A (n27656),  .B (n27653),  .CI (n10742),  .CO (n10743));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34269
+CNN, "FA1S U12691( .A (n27650),  .B (n27647),  .CI (n10743),  .CO (n10744));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34270
+CNN, "FA1S U12692( .A (n44373),  .B (n44369),  .CI (n10744),  .CO (n10745));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34271
+CNN, "FA1S U12693( .A (n44363),  .B (n44360),  .CI (n10745),  .CO (n10746));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34272
+CNN, "FA1S U12694( .A (n44357),  .B (n44354),  .CI (n10746),  .CO (n10747));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34273
+CNN, "FA1S U12695( .A (n44351),  .B (n44348),  .CI (n10747),  .CO (n10748));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34274
+CNN, "FA1S U12696( .A (n44345),  .B (n44342),  .CI (n10748),  .CO (n10749));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34275
+CNN, "FA1S U12697( .A (n44339),  .B (n44336),  .CI (n10749),  .CO (n10750));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34276
+CNN, "FA1S U12698( .A (n44333),  .B (n44330),  .CI (n10750),  .CO (n10751));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34277
+CNN, "FA1S U12699( .A (n10752),  .B (n10828),  .CI (n10751),  .CO (n10753));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34278
+CNN, "FA1S U12700( .A (n44327),  .B (n44324),  .CI (n10753),  .CO (n10754));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34292
+CNN, "FA1S U12712( .A (n10762),  .B (n27659),  .CI (n10761),  .CO (n10763));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34293
+CNN, "FA1S U12713( .A (n10764),  .B (n27653),  .CI (n10763),  .CO (n10765));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34294
+CNN, "FA1S U12714( .A (n10766),  .B (n27647),  .CI (n10765),  .CO (n10767));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34295
+CNN, "FA1S U12715( .A (n10768),  .B (n44369),  .CI (n10767),  .CO (n10769));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34296
+CNN, "FA1S U12716( .A (n10770),  .B (n44360),  .CI (n10769),  .CO (n10771));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34297
+CNN, "FA1S U12717( .A (n10772),  .B (n44354),  .CI (n10771),  .CO (n10773));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34298
+CNN, "FA1S U12718( .A (n10774),  .B (n44348),  .CI (n10773),  .CO (n10775));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34299
+CNN, "FA1S U12719( .A (n10776),  .B (n44342),  .CI (n10775),  .CO (n10777));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34300
+CNN, "FA1S U12720( .A (n10778),  .B (n44336),  .CI (n10777),  .CO (n10779));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34301
+CNN, "FA1S U12721( .A (n10780),  .B (n44330),  .CI (n10779),  .CO (n10781));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34302
+CNN, "FA1S U12722( .A (n10782),  .B (n10828),  .CI (n10781),  .CO (n10783));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34303
+CNN, "FA1S U12723( .A (n10784),  .B (n44324),  .CI (n10783),  .CO (n10785));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34324
+CNN, "FA1S U12742( .A (n10797),  .B (n27657),  .CI (n10796),  .CO (n10798));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34325
+CNN, "FA1S U12743( .A (n10799),  .B (n27651),  .CI (n10798),  .CO (n10800));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34326
+CNN, "FA1S U12744( .A (n10801),  .B (n27645),  .CI (n10800),  .CO (n10802));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34327
+CNN, "FA1S U12745( .A (n10803),  .B (n44364),  .CI (n10802),  .CO (n10804));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34328
+CNN, "FA1S U12746( .A (n10805),  .B (n44358),  .CI (n10804),  .CO (n10806));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34329
+CNN, "FA1S U12747( .A (n10807),  .B (n44352),  .CI (n10806),  .CO (n10808));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34330
+CNN, "FA1S U12748( .A (n10809),  .B (n44346),  .CI (n10808),  .CO (n10810));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34331
+CNN, "FA1S U12749( .A (n10811),  .B (n44340),  .CI (n10810),  .CO (n10812));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 34332
+CNN, "FA1S U12750( .A (n10813),  .B (n44334),  .CI (n10812),  .CO (n10814));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37506
+CNN, "FA1S U14991( .A (n14941),  .B (n12869),  .CI (n15051),  .CO (n12870));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37507
+CNN, "FA1S U14992( .A (n14945),  .B (n44300),  .CI (n12870),  .CO (n12871));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37508
+CNN, "FA1S U14993( .A (n14947),  .B (n44293),  .CI (n12871),  .CO (n12872));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37509
+CNN, "FA1S U14994( .A (n14970),  .B (n44288),  .CI (n12872),  .CO (n12873));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37510
+CNN, "FA1S U14995( .A (n14969),  .B (n44281),  .CI (n12873),  .CO (n12874));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37511
+CNN, "FA1S U14996( .A (n14951),  .B (n44276),  .CI (n12874),  .CO (n12875));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37512
+CNN, "FA1S U14997( .A (n14968),  .B (n44269),  .CI (n12875),  .CO (n12876));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37513
+CNN, "FA1S U14998( .A (n14954),  .B (n44264),  .CI (n12876),  .CO (n12877));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37514
+CNN, "FA1S U14999( .A (n14956),  .B (n44257),  .CI (n12877),  .CO (n12878));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37515
+CNN, "FA1S U15000( .A (n14967),  .B (n44252),  .CI (n12878),  .CO (n12879));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37516
+CNN, "FA1S U15001( .A (n14959),  .B (n44246),  .CI (n12879),  .CO (n12880));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37517
+CNN, "FA1S U15002( .A (n14986),  .B (n15065),  .CI (n12880),  .CO (n12881));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 37518
+CNN, "FA1S U15003( .A (n14962),  .B (n44240),  .CI (n12881),  .CO (n12882));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40480
+CNN, "FA1S U17044( .A (n14927),  .B (n44298),  .CI (n44304),  .CO (n14928));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40481
+CNN, "FA1S U17045( .A (n44297),  .B (n44292),  .CI (n14928),  .CO (n14929));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40482
+CNN, "FA1S U17046( .A (n44291),  .B (n44286),  .CI (n14929),  .CO (n14930));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40483
+CNN, "FA1S U17047( .A (n44285),  .B (n44280),  .CI (n14930),  .CO (n14931));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40484
+CNN, "FA1S U17048( .A (n44279),  .B (n44274),  .CI (n14931),  .CO (n14932));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40485
+CNN, "FA1S U17049( .A (n44273),  .B (n44268),  .CI (n14932),  .CO (n14933));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40486
+CNN, "FA1S U17050( .A (n44267),  .B (n44262),  .CI (n14933),  .CO (n14934));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40487
+CNN, "FA1S U17051( .A (n44261),  .B (n44256),  .CI (n14934),  .CO (n14935));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40488
+CNN, "FA1S U17052( .A (n44255),  .B (n44250),  .CI (n14935),  .CO (n14936));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40489
+CNN, "FA1S U17053( .A (n44249),  .B (n44244),  .CI (n14936),  .CO (n14937));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40490
+CNN, "FA1S U17054( .A (n15043),  .B (n15068),  .CI (n14937),  .CO (n14938));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40491
+CNN, "FA1S U17055( .A (n44243),  .B (n44238),  .CI (n14938),  .CO (n14939));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40492
+CNN, "FA1S U17056( .A (n44237),  .B (n44232),  .CI (n14939),  .CO (n14940));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40499
+CNN, "FA1S U17062( .A (n14945),  .B (n44298),  .CI (n14944),  .CO (n14946));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40500
+CNN, "FA1S U17063( .A (n14947),  .B (n44292),  .CI (n14946),  .CO (n14948));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40501
+CNN, "FA1S U17064( .A (n14970),  .B (n44286),  .CI (n14948),  .CO (n14949));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40502
+CNN, "FA1S U17065( .A (n14969),  .B (n44280),  .CI (n14949),  .CO (n14950));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40503
+CNN, "FA1S U17066( .A (n14951),  .B (n44274),  .CI (n14950),  .CO (n14952));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40504
+CNN, "FA1S U17067( .A (n14968),  .B (n44268),  .CI (n14952),  .CO (n14953));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40505
+CNN, "FA1S U17068( .A (n14954),  .B (n44262),  .CI (n14953),  .CO (n14955));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40506
+CNN, "FA1S U17069( .A (n14956),  .B (n44256),  .CI (n14955),  .CO (n14957));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40507
+CNN, "FA1S U17070( .A (n14967),  .B (n44250),  .CI (n14957),  .CO (n14958));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40508
+CNN, "FA1S U17071( .A (n14959),  .B (n44244),  .CI (n14958),  .CO (n14960));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40509
+CNN, "FA1S U17072( .A (n14986),  .B (n15068),  .CI (n14960),  .CO (n14961));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40510
+CNN, "FA1S U17073( .A (n14962),  .B (n44238),  .CI (n14961),  .CO (n14963));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40511
+CNN, "FA1S U17074( .A (n14964),  .B (n44232),  .CI (n14963),  .CO (n14965));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40522
+CNN, "FA1S U17085( .A (n15027),  .B (n15058),  .CI (n14973),  .CO (n14974));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40523
+CNN, "FA1S U17086( .A (n44304),  .B (n44299),  .CI (n14974),  .CO (n14975));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40524
+CNN, "FA1S U17087( .A (n44297),  .B (n44294),  .CI (n14975),  .CO (n14976));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40525
+CNN, "FA1S U17088( .A (n44291),  .B (n44287),  .CI (n14976),  .CO (n14977));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40526
+CNN, "FA1S U17089( .A (n44285),  .B (n44282),  .CI (n14977),  .CO (n14978));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40527
+CNN, "FA1S U17090( .A (n44279),  .B (n44275),  .CI (n14978),  .CO (n14979));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40528
+CNN, "FA1S U17091( .A (n44273),  .B (n44270),  .CI (n14979),  .CO (n14980));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40529
+CNN, "FA1S U17092( .A (n44267),  .B (n44263),  .CI (n14980),  .CO (n14981));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40530
+CNN, "FA1S U17093( .A (n44261),  .B (n44258),  .CI (n14981),  .CO (n14982));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40531
+CNN, "FA1S U17094( .A (n44255),  .B (n44251),  .CI (n14982),  .CO (n14983));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40537
+CNN, "FA1S U17100( .A (n14989),  .B (n44239),  .CI (n44243),  .CO (n14990));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40538
+CNN, "FA1S U17101( .A (n44237),  .B (n44234),  .CI (n14990),  .CO (n14991));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40560
+CNN, "FA1S U17122( .A (n15000),  .B (n44300),  .CI (n14999),  .CO (n15001));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40561
+CNN, "FA1S U17123( .A (n15002),  .B (n44293),  .CI (n15001),  .CO (n15003));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40562
+CNN, "FA1S U17124( .A (n15004),  .B (n44288),  .CI (n15003),  .CO (n15005));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40563
+CNN, "FA1S U17125( .A (n15006),  .B (n44281),  .CI (n15005),  .CO (n15007));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40564
+CNN, "FA1S U17126( .A (n15008),  .B (n44276),  .CI (n15007),  .CO (n15009));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40565
+CNN, "FA1S U17127( .A (n15010),  .B (n44269),  .CI (n15009),  .CO (n15011));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40566
+CNN, "FA1S U17128( .A (n15012),  .B (n44264),  .CI (n15011),  .CO (n15013));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40567
+CNN, "FA1S U17129( .A (n15014),  .B (n44257),  .CI (n15013),  .CO (n15015));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40568
+CNN, "FA1S U17130( .A (n15016),  .B (n44252),  .CI (n15015),  .CO (n15017));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40569
+CNN, "FA1S U17131( .A (n15018),  .B (n44246),  .CI (n15017),  .CO (n15019));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40570
+CNN, "FA1S U17132( .A (n15020),  .B (n15065),  .CI (n15019),  .CO (n15021));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40571
+CNN, "FA1S U17133( .A (n15022),  .B (n44240),  .CI (n15021),  .CO (n15023));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40581
+CNN, "FA1S U17141( .A (n44304),  .B (n44300),  .CI (n15032),  .CO (n15033));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40582
+CNN, "FA1S U17142( .A (n44297),  .B (n44293),  .CI (n15033),  .CO (n15034));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40583
+CNN, "FA1S U17143( .A (n44291),  .B (n44288),  .CI (n15034),  .CO (n15035));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40584
+CNN, "FA1S U17144( .A (n44285),  .B (n44281),  .CI (n15035),  .CO (n15036));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40585
+CNN, "FA1S U17145( .A (n44279),  .B (n44276),  .CI (n15036),  .CO (n15037));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40586
+CNN, "FA1S U17146( .A (n44273),  .B (n44269),  .CI (n15037),  .CO (n15038));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40587
+CNN, "FA1S U17147( .A (n44267),  .B (n44264),  .CI (n15038),  .CO (n15039));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40588
+CNN, "FA1S U17148( .A (n44261),  .B (n44257),  .CI (n15039),  .CO (n15040));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40589
+CNN, "FA1S U17149( .A (n44255),  .B (n44252),  .CI (n15040),  .CO (n15041));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40590
+CNN, "FA1S U17150( .A (n44249),  .B (n44246),  .CI (n15041),  .CO (n15042));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40591
+CNN, "FA1S U17151( .A (n15043),  .B (n15065),  .CI (n15042),  .CO (n15044));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 40592
+CNN, "FA1S U17152( .A (n44243),  .B (n44240),  .CI (n15044),  .CO (n15045));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 70545
+CNN, "FA1S U39433( .A (n35949),  .B (n37785),  .CI (n37682),  .CO (n35950));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 70546
+CNN, "FA1S U39434( .A (n37670),  .B (n37784),  .CI (n35950),  .CO (n35951));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 70547
+CNN, "FA1S U39435( .A (n37892),  .B (n37887),  .CI (n35951),  .CO (n35952));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 70548
+CNN, "FA1S U39436( .A (n37690),  .B (n37783),  .CI (n35952),  .CO (n35953));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 70549
+CNN, "FA1S U39437( .A (n37692),  .B (n37720),  .CI (n35953),  .CO (n35954));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 70550
+CNN, "FA1S U39438( .A (n37694),  .B (n37722),  .CI (n35954),  .CO (n35955));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 70551
+CNN, "FA1S U39439( .A (n37696),  .B (n37782),  .CI (n35955),  .CO (n35956));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 70552
+CNN, "FA1S U39440( .A (n37698),  .B (n37781),  .CI (n35956),  .CO (n35957));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 70553
+CNN, "FA1S U39441( .A (n37700),  .B (n37726),  .CI (n35957),  .CO (n35958));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 70554
+CNN, "FA1S U39442( .A (n37702),  .B (n37780),  .CI (n35958),  .CO (n35959));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 70555
+CNN, "FA1S U39443( .A (n36776),  .B (n37838),  .CI (n35959),  .CO (n35960));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 70556
+CNN, "FA1S U39444( .A (n36775),  .B (n37832),  .CI (n35960),  .CO (n35961));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 71510
+CNN, "FA1S U40016( .A (n37718),  .B (n37880),  .CI (n36816),  .CO (n36817));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 71511
+CNN, "FA1S U40017( .A (n37743),  .B (n37874),  .CI (n36817),  .CO (n36818));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 71512
+CNN, "FA1S U40018( .A (n37742),  .B (n37868),  .CI (n36818),  .CO (n36819));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 71513
+CNN, "FA1S U40019( .A (n37741),  .B (n37862),  .CI (n36819),  .CO (n36820));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 71514
+CNN, "FA1S U40020( .A (n37740),  .B (n37856),  .CI (n36820),  .CO (n36821));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 71515
+CNN, "FA1S U40021( .A (n37739),  .B (n37850),  .CI (n36821),  .CO (n36822));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 71516
+CNN, "FA1S U40022( .A (n37728),  .B (n37844),  .CI (n36822),  .CO (n36823));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 71517
+CNN, "FA1S U40023( .A (n37738),  .B (n37837),  .CI (n36823),  .CO (n36824));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 71518
+CNN, "FA1S U40024( .A (n37737),  .B (n37831),  .CI (n36824),  .CO (n36825));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 71519
+CNN, "FA1S U40025( .A (n37736),  .B (n37825),  .CI (n36825),  .CO (n36826));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72459
+CNN, "FA1S U40583( .A (n37892),  .B (n37888),  .CI (n37688),  .CO (n37689));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72460
+CNN, "FA1S U40584( .A (n37690),  .B (n37881),  .CI (n37689),  .CO (n37691));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72461
+CNN, "FA1S U40585( .A (n37692),  .B (n37875),  .CI (n37691),  .CO (n37693));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72462
+CNN, "FA1S U40586( .A (n37694),  .B (n37869),  .CI (n37693),  .CO (n37695));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72463
+CNN, "FA1S U40587( .A (n37696),  .B (n37863),  .CI (n37695),  .CO (n37697));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72464
+CNN, "FA1S U40588( .A (n37698),  .B (n37857),  .CI (n37697),  .CO (n37699));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72465
+CNN, "FA1S U40589( .A (n37700),  .B (n37851),  .CI (n37699),  .CO (n37701));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72469
+CNN, "FA1S U40593( .A (n37835),  .B (n37831),  .CI (n37706),  .CO (n37707));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72470
+CNN, "FA1S U40594( .A (n37829),  .B (n37825),  .CI (n37707),  .CO (n37708));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72481
+CNN, "FA1S U40604( .A (n37750),  .B (n37785),  .CI (n37713),  .CO (n37714));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72482
+CNN, "FA1S U40605( .A (n37744),  .B (n37784),  .CI (n37714),  .CO (n37715));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72483
+CNN, "FA1S U40606( .A (n37716),  .B (n37887),  .CI (n37715),  .CO (n37717));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72484
+CNN, "FA1S U40607( .A (n37718),  .B (n37783),  .CI (n37717),  .CO (n37719));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72485
+CNN, "FA1S U40608( .A (n37743),  .B (n37720),  .CI (n37719),  .CO (n37721));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72486
+CNN, "FA1S U40609( .A (n37742),  .B (n37722),  .CI (n37721),  .CO (n37723));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72487
+CNN, "FA1S U40610( .A (n37741),  .B (n37782),  .CI (n37723),  .CO (n37724));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72488
+CNN, "FA1S U40611( .A (n37740),  .B (n37781),  .CI (n37724),  .CO (n37725));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72489
+CNN, "FA1S U40612( .A (n37739),  .B (n37726),  .CI (n37725),  .CO (n37727));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72490
+CNN, "FA1S U40613( .A (n37728),  .B (n37780),  .CI (n37727),  .CO (n37729));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72491
+CNN, "FA1S U40614( .A (n37738),  .B (n37838),  .CI (n37729),  .CO (n37730));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72492
+CNN, "FA1S U40615( .A (n37737),  .B (n37832),  .CI (n37730),  .CO (n37731));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72524
+CNN, "FA1S U40645( .A (n37752),  .B (n37899),  .CI (n37751),  .CO (n37753));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72525
+CNN, "FA1S U40646( .A (n37754),  .B (n37893),  .CI (n37753),  .CO (n37755));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72526
+CNN, "FA1S U40647( .A (n37756),  .B (n37885),  .CI (n37755),  .CO (n37757));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72527
+CNN, "FA1S U40648( .A (n37758),  .B (n37879),  .CI (n37757),  .CO (n37759));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72528
+CNN, "FA1S U40649( .A (n37760),  .B (n37873),  .CI (n37759),  .CO (n37761));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72529
+CNN, "FA1S U40650( .A (n37762),  .B (n37867),  .CI (n37761),  .CO (n37763));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72530
+CNN, "FA1S U40651( .A (n37764),  .B (n37861),  .CI (n37763),  .CO (n37765));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72531
+CNN, "FA1S U40652( .A (n37766),  .B (n37855),  .CI (n37765),  .CO (n37767));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72532
+CNN, "FA1S U40653( .A (n37768),  .B (n37849),  .CI (n37767),  .CO (n37769));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72533
+CNN, "FA1S U40654( .A (n37770),  .B (n37843),  .CI (n37769),  .CO (n37771));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72534
+CNN, "FA1S U40655( .A (n37842),  .B (n37836),  .CI (n37771),  .CO (n37772));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72535
+CNN, "FA1S U40656( .A (n37835),  .B (n37830),  .CI (n37772),  .CO (n37773));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72536
+CNN, "FA1S U40657( .A (n37829),  .B (n37824),  .CI (n37773),  .CO (n37774));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72551
+CNN, "FA1S U40671( .A (n37904),  .B (n37901),  .CI (n37789),  .CO (n37790));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72552
+CNN, "FA1S U40672( .A (n37898),  .B (n37895),  .CI (n37790),  .CO (n37791));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72553
+CNN, "FA1S U40673( .A (n37792),  .B (n37888),  .CI (n37791),  .CO (n37793));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72554
+CNN, "FA1S U40674( .A (n37884),  .B (n37881),  .CI (n37793),  .CO (n37794));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72555
+CNN, "FA1S U40675( .A (n37878),  .B (n37875),  .CI (n37794),  .CO (n37795));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72556
+CNN, "FA1S U40676( .A (n37872),  .B (n37869),  .CI (n37795),  .CO (n37796));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72557
+CNN, "FA1S U40677( .A (n37866),  .B (n37863),  .CI (n37796),  .CO (n37797));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72558
+CNN, "FA1S U40678( .A (n37860),  .B (n37857),  .CI (n37797),  .CO (n37798));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 72559
+CNN, "FA1S U40679( .A (n37854),  .B (n37851),  .CI (n37798),  .CO (n37799));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+Starting vcs inline pass...
+
+
+Note-[VCS_PARAL] Parallel code-gen enabled
+  VCS is running with parallel code generation(-j)...
+
+45 modules and 1 UDP read.
+recompiling module AO222
+recompiling module FA1S
+recompiling module AO22S
+recompiling module OA22S
+recompiling module AOI22S
+recompiling module MAOI1S
+recompiling module OAI22S
+recompiling module PATTERN
+recompiling module MOAI1
+recompiling module AO13S
+recompiling module MAO222S
+recompiling module MOAI1S
+recompiling module OAI112HS
+recompiling module QDFFRBN
+recompiling module QDFFRBS
+recompiling module AO12S
+recompiling module OA12S
+recompiling module OAI12HS
+recompiling module QDFFN
+recompiling module QDFFS
+recompiling module OR3B2S
+recompiling module AN2B1
+recompiling module AN2B1S
+recompiling module AN3S
+recompiling module ND3
+recompiling module ND3S
+recompiling module NR3
+recompiling module OR2B1S
+recompiling module OR3S
+recompiling module AN2
+recompiling module AN2S
+recompiling module ND2
+recompiling module ND2S
+recompiling module NR2
+recompiling module OR2
+recompiling module OR2S
+recompiling module BUF1
+recompiling module BUF1CK
+recompiling module BUF1S
+recompiling module BUF2
+recompiling module INV1
+recompiling module INV1CK
+recompiling module INV1S
+recompiling module TESTBED
+recompiling module INV2
+All of 45 modules done
+make[1]: Entering directory `/RAID2/COURSE/DCS/DCS111/HW02/03_GATE/csrc'
+make[1]: Leaving directory `/RAID2/COURSE/DCS/DCS111/HW02/03_GATE/csrc'
+make[1]: Entering directory `/RAID2/COURSE/DCS/DCS111/HW02/03_GATE/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _82511_archive_1.so _82536_archive_1.so _82537_archive_1.so objs/udps/qndjy.o  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/pli.a -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/RAID2/COURSE/DCS/DCS111/HW02/03_GATE/csrc'
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 13 17:15 2024
+[1;31m========================================================
+                   PATTERN   0 FAIL
+                out_data in Cycle No. 0
+          Your answer =           X, Correct answer = 126
+========================================================[m
+[1;34m[=================]
+[Input Feature Map]
+[=================] [1;0m
+      0    1    2    3    4    5 
+_________________________________
+0 |   3   -7    8   -3   -1    6 
+1 |   2   -8   -4    2    5    4 
+2 |  -9   -6    0   -5    5    8 
+3 |  -2    4    1    7    2   -6 
+4 |   2   -1    6    2   -9    4 
+5 |   3    5    7   -6    6   -4 
+
+[1;34m[======]
+[Kernel]
+[======] [1;0m
+      0    1    2 
+_________________
+0 |   9    0    0 
+1 |   0   -8    1 
+2 |  -9    7    6 
+
+[1;34m[======]
+[Option]
+[======] [1;0m
+0 {Do ReLU}
+
+[1;34m[==================]
+[Convolution Result]
+[==================] [1;0m
+      0    1    2    3 
+_______________________
+0 | 126   -5   56   65 
+1 | 118  -64   61  -99 
+2 |-101    8 -148 -124 
+3 |  46  -42  -85  211 
+
+[1;34m[===========]
+[ReLU Result]
+[===========] [1;0m
+      0    1    2    3 
+_______________________
+0 | 126    0   56   65 
+1 | 118    0   61    0 
+2 |   0    8    0    0 
+3 |  46    0    0  211 
+
+[1;34m[==============]
+[Pooling Result]
+[==============] [1;0m
+      0    1 
+_____________
+0 | 126   65 
+1 |  46  211 
+
+[1;34m[===============]
+[Expected Output]
+[===============] [1;0m
+[1;36mIn Cycle 1, golden output_data =  126
+In Cycle 2, golden output_data =   65
+In Cycle 3, golden output_data =   46
+In Cycle 4, golden output_data =  211 [1;0m
+$finish called from file "PATTERN.v", line 473.
+$finish at simulation time              6950000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 6950000 ps
+CPU Time:      0.430 seconds;       Data structure size:  17.1Mb
+Sat Apr 13 17:15:55 2024
+CPU time: 6.018 seconds to compile + 1.713 seconds to elab + .633 seconds to link + .472 seconds in simulation

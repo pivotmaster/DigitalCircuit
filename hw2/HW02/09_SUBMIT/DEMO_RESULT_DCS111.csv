@@ -1,0 +1,2 @@
+Account,Error_Message,01_RTL,02_SYN,03_GATE,Cycle_Time,Latency,Syn_Area,Submiss_Date,Submiss_Time
+DCS111,03_GATE Pattern Fail,O,O,X,100,NaN,NaN,2024/04/13,17:07:55

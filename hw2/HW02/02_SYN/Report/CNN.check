@@ -1,0 +1,50 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sat Apr 13 17:08:16 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                               36
+    Unloaded nets (LINT-2)                                         36
+--------------------------------------------------------------------------------
+
+Warning: In design 'CNN', net 'net232' driven by pin 'C10083/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net231' driven by pin 'C10080/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net230' driven by pin 'C10072/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net229' driven by pin 'C10069/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net228' driven by pin 'C10058/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net227' driven by pin 'C10055/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net226' driven by pin 'C10047/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net225' driven by pin 'C10044/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net224' driven by pin 'C10033/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net223' driven by pin 'C10030/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net222' driven by pin 'C10022/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net221' driven by pin 'C10019/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net220' driven by pin 'C10008/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net219' driven by pin 'C10005/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net218' driven by pin 'C9997/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net217' driven by pin 'C9994/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net216' driven by pin 'C9984/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net215' driven by pin 'C9979/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net214' driven by pin 'C9974/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net213' driven by pin 'C9969/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net212' driven by pin 'C9964/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net211' driven by pin 'C9959/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net210' driven by pin 'C9954/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net209' driven by pin 'C9949/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net208' driven by pin 'C9944/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net207' driven by pin 'C9939/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net206' driven by pin 'C9934/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net205' driven by pin 'C9929/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net204' driven by pin 'C9924/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net203' driven by pin 'C9919/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net202' driven by pin 'C9914/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net201' driven by pin 'C9909/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net200' driven by pin 'C9903/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net199' driven by pin 'C9899/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net198' driven by pin 'C9886/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net197' driven by pin 'C9882/Z' has no loads. (LINT-2)
+1
