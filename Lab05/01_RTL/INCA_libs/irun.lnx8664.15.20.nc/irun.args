@@ -1,0 +1,12 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+testbench5.sv
+-define
+RTL
+-debug
+-access
++rwc
+-loadpli1
+debpli:novas_pli_boot

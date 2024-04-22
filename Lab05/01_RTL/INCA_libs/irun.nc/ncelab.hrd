@@ -1,0 +1,10 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-ACCESS
++rw
+-ACCESS
++rwc
+-LOADPLI1
+debpli:novas_pli_boot

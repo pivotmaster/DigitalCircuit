@@ -1,0 +1,70 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Apr 19, 2024 at 20:25:59 CST
+irun
+	testbench5.sv
+	-define RTL
+	-debug
+	-access +rwc
+	-loadpli1 debpli:novas_pli_boot
+file: testbench5.sv
+	module worklib.pattern:sv
+		errors: 0, warnings: 0
+		errors: 0, warnings: 0
+		errors: 0, warnings: 0
+		errors: 0, warnings: 0
+	module worklib.testbench:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testbench
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+  .out_result(out_result)
+                       |
+ncelab: *W,CUVMPW (./testbench5.sv,43|23): port sizes differ in port connection (7/6).
+  .out_result(out_result)
+                       |
+ncelab: *W,CUVMPW (./testbench5.sv,55|23): port sizes differ in port connection (7/6).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+			streams:  20, words:  5040
+			streams:   2, words:   624
+			streams:  22, words:  9135
+		worklib.pattern:sv <0x7a844211>
+			streams:  13, words: 25314
+		worklib.testbench:sv <0x7e7ef602>
+			streams:  15, words:  3700
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 10       5
+		Registers:               75      65
+		Scalar wires:            12       -
+		Vectored wires:          65       -
+		Always blocks:            8       8
+		Initial blocks:           5       5
+		Cont. assignments:       12       2
+		Pseudo assignments:      42      42
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testbench:sv
+Loading snapshot worklib.testbench:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'lab05_5.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+--------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    SPEC 5 FAIL                                                             
+                                                                    YOUR:    4                                                 
+                                                                    GOLDEN:   1                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------
+Simulation complete via $finish(1) at time 195 NS + 0
+./pattern.sv:176 	    $finish ;
+ncsim> exit
+TOOL:	irun(64)	15.20-s084: Exiting on Apr 19, 2024 at 20:26:01 CST  (total: 00:00:02)

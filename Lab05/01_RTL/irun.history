@@ -1,0 +1,6 @@
+s1(19Apr2024:20:25:50):  irun testbench.sv -define RTL -debug -access +rwc -loadpli1 debpli:novas_pli_boot 
+s2(19Apr2024:20:25:52):  irun testbench1.sv -define RTL -debug -access +rwc -loadpli1 debpli:novas_pli_boot 
+s3(19Apr2024:20:25:54):  irun testbench2.sv -define RTL -debug -access +rwc -loadpli1 debpli:novas_pli_boot 
+s4(19Apr2024:20:25:55):  irun testbench3.sv -define RTL -debug -access +rwc -loadpli1 debpli:novas_pli_boot 
+s5(19Apr2024:20:25:58):  irun testbench4.sv -define RTL -debug -access +rwc -loadpli1 debpli:novas_pli_boot 
+s6(19Apr2024:20:25:59):  irun testbench5.sv -define RTL -debug -access +rwc -loadpli1 debpli:novas_pli_boot 
