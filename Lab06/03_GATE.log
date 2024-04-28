@@ -1,0 +1,2089 @@
+vcs -timescale=1ns/1fs -j8                -sverilog +v2k -full64 -Mupdate -R -debug_access+all -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v -f "filelist.f"	 -o "simv"      	 -l "vcs.log"      	 -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a -v ~iclabTA01/UMC018_CBDK/CIC/Verilog/fsa0m_a_generic_core_30.lib.src +define+GATE +neg_tchk +nowarnNTCDSN
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sun Apr 28 04:35:57 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TESTBED.v'
+Parsing included file 'PATTERN.v'.
+Back to file 'TESTBED.v'.
+Parsing included file 'CNN_SYN.v'.
+Back to file 'TESTBED.v'.
+Parsing library file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/Verilog/fsa0m_a_generic_core_30.lib.src'
+Top Level Modules:
+       TESTBED
+TimeScale is 10 ps / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1394
+CNN, "DFCRBN relu_layer_reg_13__15_( .D (opt_reg),  .RB (conv_layer[47]),  .CK (clk),  .Q (relu_layer[36]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1398
+CNN, "DFCRBN relu_layer_reg_11__15_( .D (opt_reg),  .RB (conv_layer[79]),  .CK (clk),  .Q (relu_layer[62]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1402
+CNN, "DFCRBN relu_layer_reg_9__15_( .D (opt_reg),  .RB (conv_layer[111]),  .CK (clk),  .Q (relu_layer[81]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1412
+CNN, "DFCRBN relu_layer_reg_4__15_( .D (opt_reg),  .RB (conv_layer[191]),  .CK (clk),  .Q (relu_layer[153]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1420
+CNN, "DFCRBN relu_layer_reg_0__15_( .D (opt_reg),  .RB (conv_layer[255]),  .CK (clk),  .QB (n11534));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1422
+CNN, "DFCRBN relu_layer_reg_15__14_( .D (n11254),  .RB (conv_layer[14]),  .CK (clk),  .Q (relu_layer[14]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1424
+CNN, "DFCRBN relu_layer_reg_15__13_( .D (n11254),  .RB (conv_layer[13]),  .CK (clk),  .Q (relu_layer[13]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1426
+CNN, "DFCRBN relu_layer_reg_15__12_( .D (n11254),  .RB (conv_layer[12]),  .CK (clk),  .Q (relu_layer[12]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1428
+CNN, "DFCRBN relu_layer_reg_15__11_( .D (n11254),  .RB (conv_layer[11]),  .CK (clk),  .Q (relu_layer[11]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1436
+CNN, "DFCRBN relu_layer_reg_15__7_( .D (n11254),  .RB (conv_layer[7]),  .CK (clk),  .Q (relu_layer[7]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1438
+CNN, "DFCRBN relu_layer_reg_15__6_( .D (n11254),  .RB (conv_layer[6]),  .CK (clk),  .Q (relu_layer[6]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1440
+CNN, "DFCRBN relu_layer_reg_15__5_( .D (n11254),  .RB (conv_layer[5]),  .CK (clk),  .Q (relu_layer[5]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1460
+CNN, "DFCRBN relu_layer_reg_14__10_( .D (n11255),  .RB (conv_layer[26]),  .CK (clk),  .QB (n11567));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1472
+CNN, "DFCRBN relu_layer_reg_14__4_( .D (n11255),  .RB (conv_layer[20]),  .CK (clk),  .QB (intadd_0_B_3_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1474
+CNN, "DFCRBN relu_layer_reg_14__3_( .D (n11255),  .RB (conv_layer[19]),  .CK (clk),  .QB (intadd_0_B_2_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1476
+CNN, "DFCRBN relu_layer_reg_14__2_( .D (n11255),  .RB (conv_layer[18]),  .CK (clk),  .QB (intadd_0_B_1_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1478
+CNN, "DFCRBN relu_layer_reg_14__1_( .D (n11255),  .RB (conv_layer[17]),  .CK (clk),  .QB (intadd_0_B_0_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1480
+CNN, "DFCRBN relu_layer_reg_14__0_( .D (n11255),  .RB (conv_layer[16]),  .CK (clk),  .Q (relu_layer[16]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1486
+CNN, "DFCRBN relu_layer_reg_13__12_( .D (n11256),  .RB (conv_layer[44]),  .CK (clk),  .Q (relu_layer[33]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1498
+CNN, "DFCRBN relu_layer_reg_13__6_( .D (n11256),  .RB (conv_layer[38]),  .CK (clk),  .QB (intadd_3_B_4_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1500
+CNN, "DFCRBN relu_layer_reg_13__5_( .D (n11256),  .RB (conv_layer[37]),  .CK (clk),  .QB (intadd_3_B_3_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1502
+CNN, "DFCRBN relu_layer_reg_13__4_( .D (n11256),  .RB (conv_layer[36]),  .CK (clk),  .QB (intadd_3_B_2_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1504
+CNN, "DFCRBN relu_layer_reg_13__3_( .D (n11256),  .RB (conv_layer[35]),  .CK (clk),  .QB (intadd_3_B_1_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1506
+CNN, "DFCRBN relu_layer_reg_13__2_( .D (n11256),  .RB (conv_layer[34]),  .CK (clk),  .QB (intadd_3_CI));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1508
+CNN, "DFCRBN relu_layer_reg_13__1_( .D (n11256),  .RB (conv_layer[33]),  .CK (clk),  .QB (n11425));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1510
+CNN, "DFCRBN relu_layer_reg_13__0_( .D (n11256),  .RB (conv_layer[32]),  .CK (clk),  .Q (relu_layer[27]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1512
+CNN, "DFCRBN relu_layer_reg_12__14_( .D (n11257),  .RB (conv_layer[62]),  .CK (clk),  .QB (n11515));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1514
+CNN, "DFCRBN relu_layer_reg_12__13_( .D (n11257),  .RB (conv_layer[61]),  .CK (clk),  .QB (n11513));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1518
+CNN, "DFCRBN relu_layer_reg_12__11_( .D (n11257),  .RB (conv_layer[59]),  .CK (clk),  .Q (relu_layer[46]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1522
+CNN, "DFCRBN relu_layer_reg_12__9_( .D (n11257),  .RB (conv_layer[57]),  .CK (clk),  .QB (n11576));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1524
+CNN, "DFCRBN relu_layer_reg_12__8_( .D (n11257),  .RB (conv_layer[56]),  .CK (clk),  .QB (n11577));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1526
+CNN, "DFCRBN relu_layer_reg_12__7_( .D (n11257),  .RB (conv_layer[55]),  .CK (clk),  .Q (relu_layer[44]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1550
+CNN, "DFCRBN relu_layer_reg_11__10_( .D (n11258),  .RB (conv_layer[74]),  .CK (clk),  .Q (relu_layer[57]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1552
+CNN, "DFCRBN relu_layer_reg_11__9_( .D (n11258),  .RB (conv_layer[73]),  .CK (clk),  .QB (n11564));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1554
+CNN, "DFCRBN relu_layer_reg_11__8_( .D (n11258),  .RB (conv_layer[72]),  .CK (clk),  .Q (relu_layer[56]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1556
+CNN, "DFCRBN relu_layer_reg_11__7_( .D (n11258),  .RB (conv_layer[71]),  .CK (clk),  .QB (n11533));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1574
+CNN, "DFCRBN relu_layer_reg_10__13_( .D (n11259),  .RB (conv_layer[93]),  .CK (clk),  .QB (n11531));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1586
+CNN, "DFCRBN relu_layer_reg_10__7_( .D (n11259),  .RB (conv_layer[87]),  .CK (clk),  .QB (n11532));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1588
+CNN, "DFCRBN relu_layer_reg_10__6_( .D (n11259),  .RB (conv_layer[86]),  .CK (clk),  .QB (intadd_2_B_5_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1590
+CNN, "DFCRBN relu_layer_reg_10__5_( .D (n11259),  .RB (conv_layer[85]),  .CK (clk),  .QB (intadd_2_B_4_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1592
+CNN, "DFCRBN relu_layer_reg_10__4_( .D (n11259),  .RB (conv_layer[84]),  .CK (clk),  .QB (intadd_2_B_3_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1594
+CNN, "DFCRBN relu_layer_reg_10__3_( .D (n11259),  .RB (conv_layer[83]),  .CK (clk),  .QB (intadd_2_B_2_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1596
+CNN, "DFCRBN relu_layer_reg_10__2_( .D (n11259),  .RB (conv_layer[82]),  .CK (clk),  .QB (intadd_2_B_1_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1598
+CNN, "DFCRBN relu_layer_reg_10__1_( .D (n11259),  .RB (conv_layer[81]),  .CK (clk),  .QB (intadd_2_B_0_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1600
+CNN, "DFCRBN relu_layer_reg_10__0_( .D (n11259),  .RB (conv_layer[80]),  .CK (clk),  .Q (relu_layer[63]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1602
+CNN, "DFCRBN relu_layer_reg_9__14_( .D (n11260),  .RB (conv_layer[110]),  .CK (clk),  .Q (relu_layer[80]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1606
+CNN, "DFCRBN relu_layer_reg_9__12_( .D (n11260),  .RB (conv_layer[108]),  .CK (clk),  .QB (n11516));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1610
+CNN, "DFCRBN relu_layer_reg_9__10_( .D (n11260),  .RB (conv_layer[106]),  .CK (clk),  .Q (relu_layer[77]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1612
+CNN, "DFCRBN relu_layer_reg_9__9_( .D (n11260),  .RB (conv_layer[105]),  .CK (clk),  .Q (relu_layer[76]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1622
+CNN, "DFCRBN relu_layer_reg_9__4_( .D (n11260),  .RB (conv_layer[100]),  .CK (clk),  .QB (intadd_7_B_2_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1624
+CNN, "DFCRBN relu_layer_reg_9__3_( .D (n11260),  .RB (conv_layer[99]),  .CK (clk),  .QB (intadd_7_B_1_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1626
+CNN, "DFCRBN relu_layer_reg_9__2_( .D (n11260),  .RB (conv_layer[98]),  .CK (clk),  .QB (intadd_7_CI));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1628
+CNN, "DFCRBN relu_layer_reg_9__1_( .D (n11260),  .RB (conv_layer[97]),  .CK (clk),  .QB (n11420));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1630
+CNN, "DFCRBN relu_layer_reg_9__0_( .D (n11260),  .RB (conv_layer[96]),  .CK (clk),  .Q (relu_layer[71]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1644
+CNN, "DFCRBN relu_layer_reg_8__8_( .D (n11261),  .RB (conv_layer[120]),  .CK (clk),  .Q (relu_layer[90]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1648
+CNN, "DFCRBN relu_layer_reg_8__6_( .D (n11261),  .RB (conv_layer[118]),  .CK (clk),  .Q (relu_layer[88]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1650
+CNN, "DFCRBN relu_layer_reg_8__5_( .D (n11261),  .RB (conv_layer[117]),  .CK (clk),  .Q (relu_layer[87]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1670
+CNN, "DFCRBN relu_layer_reg_7__10_( .D (n11262),  .RB (conv_layer[138]),  .CK (clk),  .Q (relu_layer[107]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1672
+CNN, "DFCRBN relu_layer_reg_7__9_( .D (n11262),  .RB (conv_layer[137]),  .CK (clk),  .Q (relu_layer[106]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1674
+CNN, "DFCRBN relu_layer_reg_7__8_( .D (n11262),  .RB (conv_layer[136]),  .CK (clk),  .QB (n11558));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1682
+CNN, "DFCRBN relu_layer_reg_7__4_( .D (n11262),  .RB (conv_layer[132]),  .CK (clk),  .Q (relu_layer[102]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1684
+CNN, "DFCRBN relu_layer_reg_7__3_( .D (n11262),  .RB (conv_layer[131]),  .CK (clk),  .Q (relu_layer[101]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1686
+CNN, "DFCRBN relu_layer_reg_7__2_( .D (n11262),  .RB (conv_layer[130]),  .CK (clk),  .Q (relu_layer[100]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1688
+CNN, "DFCRBN relu_layer_reg_7__1_( .D (n11262),  .RB (conv_layer[129]),  .CK (clk),  .Q (relu_layer[99]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1694
+CNN, "DFCRBN relu_layer_reg_6__13_( .D (n11263),  .RB (conv_layer[157]),  .CK (clk),  .QB (n11494));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1698
+CNN, "DFCRBN relu_layer_reg_6__11_( .D (n11263),  .RB (conv_layer[155]),  .CK (clk),  .Q (relu_layer[123]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1706
+CNN, "DFCRBN relu_layer_reg_6__7_( .D (n11263),  .RB (conv_layer[151]),  .CK (clk),  .QB (n11490));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1710
+CNN, "DFCRBN relu_layer_reg_6__5_( .D (n11263),  .RB (conv_layer[149]),  .CK (clk),  .Q (relu_layer[118]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1720
+CNN, "DFCRBN relu_layer_reg_6__0_( .D (n11263),  .RB (conv_layer[144]),  .CK (clk),  .Q (relu_layer[113]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1728
+CNN, "DFCRBN relu_layer_reg_5__11_( .D (n11264),  .RB (conv_layer[171]),  .CK (clk),  .Q (relu_layer[133]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1732
+CNN, "DFCRBN relu_layer_reg_5__9_( .D (n11264),  .RB (conv_layer[169]),  .CK (clk),  .QB (n11545));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1742
+CNN, "DFCRBN relu_layer_reg_5__4_( .D (n11264),  .RB (conv_layer[164]),  .CK (clk),  .QB (intadd_1_B_2_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1744
+CNN, "DFCRBN relu_layer_reg_5__3_( .D (n11264),  .RB (conv_layer[163]),  .CK (clk),  .QB (intadd_1_B_1_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1746
+CNN, "DFCRBN relu_layer_reg_5__2_( .D (n11264),  .RB (conv_layer[162]),  .CK (clk),  .QB (intadd_1_CI));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1748
+CNN, "DFCRBN relu_layer_reg_5__1_( .D (n11264),  .RB (conv_layer[161]),  .CK (clk),  .QB (n11483));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1750
+CNN, "DFCRBN relu_layer_reg_5__0_( .D (n11264),  .RB (conv_layer[160]),  .CK (clk),  .Q (relu_layer[127]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1764
+CNN, "DFCRBN relu_layer_reg_4__8_( .D (n11265),  .RB (conv_layer[184]),  .CK (clk),  .Q (relu_layer[146]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1766
+CNN, "DFCRBN relu_layer_reg_4__7_( .D (n11265),  .RB (conv_layer[183]),  .CK (clk),  .Q (relu_layer[145]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1768
+CNN, "DFCRBN relu_layer_reg_4__6_( .D (n11265),  .RB (conv_layer[182]),  .CK (clk),  .Q (relu_layer[144]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1770
+CNN, "DFCRBN relu_layer_reg_4__5_( .D (n11265),  .RB (conv_layer[181]),  .CK (clk),  .Q (relu_layer[143]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1788
+CNN, "DFCRBN relu_layer_reg_3__11_( .D (n11266),  .RB (conv_layer[203]),  .CK (clk),  .QB (n11560));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1790
+CNN, "DFCRBN relu_layer_reg_3__10_( .D (n11266),  .RB (conv_layer[202]),  .CK (clk),  .QB (n11561));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1792
+CNN, "DFCRBN relu_layer_reg_3__9_( .D (n11266),  .RB (conv_layer[201]),  .CK (clk),  .QB (n11562));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1794
+CNN, "DFCRBN relu_layer_reg_3__8_( .D (n11266),  .RB (conv_layer[200]),  .CK (clk),  .Q (relu_layer[158]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1802
+CNN, "DFCRBN relu_layer_reg_3__4_( .D (n11266),  .RB (conv_layer[196]),  .CK (clk),  .QB (intadd_11_A_2_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1804
+CNN, "DFCRBN relu_layer_reg_3__3_( .D (n11266),  .RB (conv_layer[195]),  .CK (clk),  .QB (intadd_11_B_1_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1806
+CNN, "DFCRBN relu_layer_reg_3__2_( .D (n11266),  .RB (conv_layer[194]),  .CK (clk),  .QB (intadd_11_CI));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1808
+CNN, "DFCRBN relu_layer_reg_3__1_( .D (n11266),  .RB (conv_layer[193]),  .CK (clk),  .QB (n11460));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1810
+CNN, "DFCRBN relu_layer_reg_3__0_( .D (n11266),  .RB (conv_layer[192]),  .CK (clk),  .Q (relu_layer[154]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1880
+CNN, "DFCRBN relu_layer_reg_0__10_( .D (n11269),  .RB (conv_layer[250]),  .CK (clk),  .Q (relu_layer[201]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1892
+CNN, "DFCRBN relu_layer_reg_0__4_( .D (n11269),  .RB (conv_layer[244]),  .CK (clk),  .QB (intadd_5_A_3_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1894
+CNN, "DFCRBN relu_layer_reg_0__3_( .D (n11269),  .RB (conv_layer[243]),  .CK (clk),  .QB (intadd_5_B_2_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1896
+CNN, "DFCRBN relu_layer_reg_0__2_( .D (n11269),  .RB (conv_layer[242]),  .CK (clk),  .QB (intadd_5_B_1_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1898
+CNN, "DFCRBN relu_layer_reg_0__1_( .D (n11269),  .RB (conv_layer[241]),  .CK (clk),  .QB (intadd_5_B_0_));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1900
+CNN, "DFCRBN relu_layer_reg_0__0_( .D (n11269),  .RB (conv_layer[240]),  .CK (clk),  .Q (relu_layer[195]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1902
+CNN, "DFCLRBN conv_layer_reg_12__6_( .RB (n11271),  .D (n10865),  .LD (n11272),  .CK (clk),  .Q (conv_layer[54]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+CNN_SYN.v, 1984
+CNN, "DFFS conv_layer_reg_9__11_( .D (n11405),  .CK (clk),  .QB (conv_layer[107]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "CNN_SYN.sdf"
+   ***    Annotation scope: TESTBED.u_CNN
+   ***    No MTM selection argument specified
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    MTM selection defaulted to "TOOL_CONTROL":
+               (+typdelays compiled, TYPICAL delays selected)
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Sun Apr 28 04:36:00 2024
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+CNN_SYN.sdf, 157925
+module: QDFFRBP, "instance: TESTBED.u_CNN.count_reg_0_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+CNN_SYN.sdf, 158728
+module: QDFFRBT, "instance: TESTBED.u_CNN.count_reg_3_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+CNN_SYN.sdf, 158766
+module: QDFFRBT, "instance: TESTBED.u_CNN.count_reg_2_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+CNN_SYN.sdf, 158787
+module: QDFFRBT, "instance: TESTBED.u_CNN.count_reg_4_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+CNN_SYN.sdf, 165264
+module: QDFFRBS, "instance: TESTBED.u_CNN.out_data_reg_0_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+CNN_SYN.sdf, 165285
+module: QDFFRBS, "instance: TESTBED.u_CNN.out_data_reg_1_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+CNN_SYN.sdf, 165306
+module: QDFFRBS, "instance: TESTBED.u_CNN.out_data_reg_2_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+CNN_SYN.sdf, 165327
+module: QDFFRBS, "instance: TESTBED.u_CNN.out_data_reg_3_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+CNN_SYN.sdf, 165348
+module: QDFFRBS, "instance: TESTBED.u_CNN.out_data_reg_4_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+All future warnings not reported; use +sdfverbose to report them.
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+CNN_SYN.sdf, 165369
+module: QDFFRBS, "instance: TESTBED.u_CNN.out_data_reg_5_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+          Total errors: 0
+          Total warnings: 25
+   ***    SDF annotation completed: Sun Apr 28 04:36:00 2024
+
+
+
+Warning-[DRTZ] Detect delay value roundoff to 0
+  Delay from design or SDF file roundoff to 0 based on timescale
+  Please use switch -diag timescale to dump detailed information.
+
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+
+Note-[VCS_PARAL] Parallel code-gen enabled
+  VCS is running with parallel code generation(-j)...
+
+139 modules and 2 UDPs read.
+recompiling module MOAI1HP
+recompiling module OAI222S
+recompiling module MOAI1HT
+recompiling module DFCLRBN
+recompiling module MOAI1S
+recompiling module XNR2HS
+recompiling module FA1
+recompiling module OAI22H
+recompiling module XNR2HT
+recompiling module FA1P
+recompiling module XOR2H
+recompiling module OAI22HP
+recompiling module XOR2HP
+recompiling module OAI22S
+recompiling module CNN
+recompiling module FA1S
+recompiling module XOR2HS
+recompiling module XOR3
+recompiling module XOR2HT
+recompiling module AO22
+recompiling module XOR3S
+recompiling module AOI12H
+recompiling module OA22
+recompiling module AO13S
+recompiling module AOI12HP
+recompiling module OA22S
+recompiling module MAO222
+recompiling module AOI22H
+recompiling module AOI12HS
+recompiling module MAO222P
+recompiling module AOI22HP
+recompiling module AOI12HT
+recompiling module MAO222S
+recompiling module PATTERN
+recompiling module OAI12H
+recompiling module AO112
+recompiling module AOI22HT
+recompiling module OAI12HP
+recompiling module OAI12HS
+recompiling module AOI13HS
+recompiling module OAI12HT
+recompiling module AOI22S
+recompiling module MXL2H
+recompiling module MAOI1
+recompiling module MXL2HF
+recompiling module QDFFP
+recompiling module MAOI1H
+recompiling module MAOI1HP
+recompiling module QDFFS
+recompiling module MXL2HS
+recompiling module AN4B1
+recompiling module AN4B1S
+recompiling module MXL2HT
+recompiling module OR3B2
+recompiling module MOAI1
+recompiling module TESTBED
+recompiling module OA112
+recompiling module AN4
+recompiling module OA112S
+recompiling module AN4S
+recompiling module MOAI1H
+recompiling module AN2B1
+recompiling module AN2B1P
+recompiling module AO12
+recompiling module BUF1
+recompiling module AOI112H
+recompiling module AN2B1S
+recompiling module BUF12CK
+recompiling module BUF1CK
+recompiling module AN2B1T
+recompiling module BUF1S
+recompiling module BUF2
+recompiling module AN3
+recompiling module DFCRBN
+recompiling module BUF3
+recompiling module AN3S
+recompiling module BUF4
+recompiling module ND3
+recompiling module MUX2
+recompiling module BUF4CK
+recompiling module ND3HT
+recompiling module MUX2S
+recompiling module BUF6
+recompiling module ND3P
+recompiling module BUF6CK
+recompiling module BUF8CK
+recompiling module ND3S
+recompiling module INV1
+recompiling module INV12
+recompiling module NR3
+recompiling module INV1CK
+recompiling module NR3H
+recompiling module INV1S
+recompiling module OAI112H
+recompiling module NR3HP
+recompiling module INV2
+recompiling module OAI112HP
+recompiling module NR3HT
+recompiling module INV3
+recompiling module OR2B1
+recompiling module OAI112HS
+recompiling module INV3CK
+recompiling module INV4
+recompiling module INV4CK
+recompiling module OR2B1S
+recompiling module INV6
+recompiling module AN2
+recompiling module INV6CK
+recompiling module OAI112HT
+recompiling module INV8
+recompiling module INV8CK
+recompiling module TIE1
+recompiling module AN2S
+recompiling module QDFFRBP
+recompiling module AN2T
+recompiling module ND2
+recompiling module QDFFRBS
+recompiling module ND2F
+recompiling module ND2P
+recompiling module QDFFRBT
+recompiling module ND2S
+recompiling module AO12S
+recompiling module ND2T
+recompiling module AO12T
+recompiling module NR2
+recompiling module NR2F
+recompiling module NR2P
+recompiling module DFFS
+recompiling module OA12
+recompiling module NR2T
+recompiling module OR2
+recompiling module OA12P
+recompiling module OA12S
+recompiling module OR2P
+recompiling module XNR2H
+recompiling module OR2S
+recompiling module XNR2HP
+recompiling module QDFFN
+recompiling module OR2T
+All of 139 modules done
+make[1]: Entering directory `/RAID2/COURSE/DCS/DCS111/Lab06/03_GATE/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _39447_archive_1.so _39470_archive_1.so _39471_archive_1.so _39472_archive_1.so _39473_archive_1.so objs/udps/qndjy.o objs/udps/Sbaqa.o  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/pli.a -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/RAID2/COURSE/DCS/DCS111/Lab06/03_GATE/csrc'
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 28 04:36 2024
+Doing SDF annotation ...... Done
+*Verdi* Loading libsscore_vcs201906.so
+FSDB Dumper for VCS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+***********************************************************************
+*  ERROR -                                                            *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior, please contact Synopsys support for   *
+*  assistance.                                                        *
+***********************************************************************
+*Verdi* : Create FSDB file 'CNN_SYN.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+[1;32m Pattern   0 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern   1 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern   2 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern   3 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern   4 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern   5 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern   6 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern   7 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern   8 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern   9 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  10 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  11 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  12 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  13 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  14 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  15 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  16 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  17 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  18 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  19 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  20 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  21 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  22 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  23 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  24 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  25 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  26 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  27 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  28 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  29 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  30 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  31 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  32 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  33 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  34 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  35 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  36 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  37 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  38 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  39 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  40 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  41 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  42 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  43 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  44 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  45 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  46 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  47 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  48 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  49 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  50 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  51 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  52 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  53 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  54 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  55 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  56 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  57 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  58 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  59 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  60 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  61 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  62 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  63 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  64 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  65 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  66 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  67 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  68 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  69 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  70 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  71 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  72 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  73 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  74 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  75 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  76 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  77 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  78 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  79 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  80 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  81 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  82 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  83 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  84 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  85 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  86 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  87 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  88 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  89 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  90 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  91 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  92 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  93 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  94 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  95 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  96 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  97 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  98 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern  99 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 100 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 101 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 102 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 103 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 104 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 105 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 106 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 107 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 108 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 109 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 110 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 111 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 112 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 113 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 114 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 115 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 116 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 117 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 118 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 119 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 120 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 121 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 122 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 123 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 124 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 125 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 126 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 127 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 128 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 129 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 130 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 131 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 132 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 133 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 134 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 135 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 136 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 137 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 138 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 139 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 140 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 141 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 142 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 143 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 144 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 145 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 146 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 147 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 148 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 149 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 150 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 151 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 152 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 153 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 154 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 155 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 156 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 157 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 158 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 159 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 160 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 161 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 162 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 163 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 164 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 165 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 166 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 167 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 168 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 169 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 170 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 171 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 172 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 173 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 174 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 175 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 176 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 177 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 178 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 179 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 180 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 181 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 182 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 183 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 184 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 185 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 186 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 187 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 188 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 189 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 190 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 191 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 192 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 193 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 194 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 195 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 196 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 197 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 198 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 199 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 200 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 201 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 202 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 203 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 204 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 205 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 206 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 207 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 208 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 209 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 210 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 211 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 212 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 213 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 214 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 215 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 216 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 217 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 218 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 219 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 220 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 221 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 222 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 223 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 224 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 225 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 226 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 227 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 228 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 229 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 230 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 231 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 232 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 233 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 234 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 235 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 236 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 237 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 238 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 239 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 240 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 241 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 242 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 243 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 244 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 245 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 246 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 247 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 248 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 249 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 250 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 251 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 252 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 253 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 254 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 255 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 256 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 257 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 258 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 259 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 260 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 261 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 262 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 263 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 264 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 265 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 266 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 267 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 268 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 269 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 270 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 271 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 272 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 273 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 274 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 275 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 276 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 277 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 278 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 279 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 280 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 281 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 282 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 283 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 284 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 285 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 286 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 287 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 288 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 289 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 290 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 291 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 292 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 293 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 294 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 295 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 296 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 297 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 298 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 299 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 300 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 301 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 302 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 303 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 304 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 305 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 306 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 307 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 308 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 309 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 310 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 311 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 312 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 313 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 314 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 315 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 316 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 317 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 318 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 319 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 320 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 321 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 322 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 323 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 324 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 325 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 326 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 327 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 328 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 329 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 330 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 331 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 332 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 333 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 334 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 335 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 336 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 337 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 338 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 339 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 340 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 341 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 342 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 343 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 344 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 345 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 346 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 347 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 348 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 349 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 350 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 351 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 352 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 353 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 354 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 355 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 356 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 357 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 358 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 359 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 360 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 361 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 362 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 363 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 364 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 365 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 366 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 367 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 368 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 369 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 370 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 371 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 372 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 373 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 374 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 375 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 376 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 377 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 378 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 379 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 380 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 381 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 382 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 383 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 384 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 385 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 386 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 387 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 388 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 389 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 390 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 391 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 392 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 393 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 394 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 395 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 396 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 397 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 398 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 399 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 400 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 401 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 402 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 403 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 404 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 405 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 406 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 407 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 408 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 409 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 410 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 411 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 412 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 413 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 414 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 415 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 416 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 417 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 418 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 419 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 420 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 421 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 422 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 423 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 424 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 425 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 426 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 427 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 428 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 429 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 430 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 431 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 432 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 433 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 434 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 435 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 436 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 437 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 438 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 439 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 440 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 441 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 442 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 443 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 444 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 445 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 446 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 447 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 448 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 449 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 450 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 451 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 452 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 453 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 454 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 455 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 456 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 457 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 458 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 459 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 460 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 461 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 462 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 463 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 464 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 465 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 466 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 467 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 468 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 469 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 470 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 471 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 472 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 473 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 474 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 475 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 476 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 477 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 478 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 479 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 480 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 481 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 482 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 483 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 484 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 485 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 486 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 487 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 488 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 489 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 490 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 491 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 492 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 493 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 494 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 495 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 496 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 497 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 498 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 499 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 500 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 501 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 502 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 503 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 504 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 505 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 506 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 507 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 508 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 509 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 510 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 511 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 512 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 513 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 514 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 515 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 516 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 517 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 518 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 519 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 520 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 521 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 522 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 523 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 524 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 525 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 526 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 527 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 528 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 529 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 530 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 531 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 532 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 533 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 534 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 535 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 536 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 537 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 538 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 539 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 540 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 541 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 542 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 543 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 544 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 545 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 546 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 547 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 548 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 549 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 550 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 551 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 552 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 553 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 554 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 555 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 556 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 557 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 558 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 559 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 560 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 561 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 562 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 563 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 564 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 565 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 566 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 567 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 568 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 569 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 570 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 571 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 572 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 573 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 574 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 575 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 576 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 577 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 578 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 579 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 580 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 581 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 582 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 583 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 584 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 585 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 586 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 587 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 588 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 589 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 590 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 591 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 592 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 593 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 594 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 595 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 596 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 597 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 598 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 599 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 600 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 601 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 602 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 603 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 604 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 605 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 606 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 607 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 608 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 609 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 610 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 611 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 612 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 613 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 614 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 615 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 616 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 617 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 618 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 619 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 620 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 621 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 622 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 623 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 624 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 625 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 626 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 627 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 628 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 629 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 630 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 631 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 632 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 633 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 634 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 635 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 636 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 637 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 638 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 639 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 640 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 641 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 642 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 643 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 644 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 645 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 646 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 647 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 648 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 649 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 650 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 651 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 652 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 653 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 654 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 655 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 656 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 657 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 658 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 659 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 660 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 661 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 662 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 663 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 664 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 665 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 666 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 667 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 668 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 669 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 670 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 671 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 672 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 673 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 674 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 675 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 676 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 677 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 678 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 679 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 680 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 681 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 682 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 683 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 684 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 685 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 686 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 687 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 688 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 689 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 690 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 691 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 692 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 693 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 694 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 695 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 696 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 697 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 698 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 699 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 700 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 701 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 702 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 703 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 704 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 705 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 706 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 707 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 708 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 709 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 710 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 711 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 712 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 713 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 714 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 715 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 716 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 717 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 718 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 719 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 720 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 721 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 722 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 723 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 724 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 725 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 726 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 727 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 728 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 729 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 730 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 731 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 732 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 733 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 734 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 735 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 736 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 737 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 738 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 739 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 740 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 741 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 742 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 743 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 744 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 745 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 746 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 747 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 748 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 749 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 750 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 751 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 752 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 753 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 754 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 755 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 756 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 757 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 758 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 759 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 760 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 761 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 762 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 763 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 764 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 765 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 766 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 767 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 768 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 769 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 770 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 771 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 772 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 773 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 774 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 775 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 776 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 777 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 778 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 779 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 780 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 781 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 782 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 783 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 784 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 785 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 786 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 787 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 788 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 789 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 790 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 791 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 792 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 793 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 794 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 795 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 796 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 797 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 798 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 799 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 800 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 801 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 802 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 803 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 804 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 805 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 806 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 807 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 808 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 809 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 810 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 811 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 812 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 813 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 814 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 815 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 816 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 817 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 818 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 819 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 820 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 821 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 822 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 823 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 824 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 825 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 826 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 827 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 828 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 829 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 830 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 831 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 832 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 833 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 834 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 835 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 836 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 837 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 838 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 839 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 840 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 841 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 842 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 843 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 844 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 845 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 846 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 847 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 848 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 849 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 850 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 851 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 852 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 853 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 854 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 855 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 856 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 857 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 858 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 859 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 860 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 861 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 862 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 863 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 864 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 865 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 866 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 867 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 868 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 869 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 870 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 871 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 872 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 873 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 874 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 875 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 876 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 877 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 878 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 879 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 880 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 881 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 882 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 883 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 884 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 885 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 886 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 887 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 888 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 889 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 890 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 891 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 892 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 893 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 894 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 895 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 896 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 897 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 898 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 899 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 900 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 901 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 902 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 903 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 904 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 905 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 906 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 907 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 908 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 909 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 910 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 911 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 912 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 913 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 914 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 915 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 916 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 917 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 918 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 919 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 920 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 921 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 922 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 923 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 924 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 925 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 926 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 927 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 928 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 929 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 930 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 931 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 932 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 933 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 934 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 935 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 936 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 937 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 938 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 939 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 940 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 941 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 942 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 943 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 944 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 945 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 946 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 947 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 948 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 949 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 950 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 951 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 952 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 953 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 954 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 955 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 956 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 957 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 958 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 959 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 960 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 961 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 962 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 963 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 964 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 965 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 966 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 967 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 968 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 969 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 970 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 971 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 972 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 973 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 974 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 975 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 976 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 977 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 978 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 979 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 980 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 981 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 982 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 983 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 984 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 985 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 986 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 987 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 988 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 989 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 990 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 991 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 992 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 993 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 994 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 995 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 996 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 997 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 998 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;32m Pattern 999 Pass [1;33m Latency =  18 Cycles [1;0m
+[1;35m========================================================
+                      Congratulations!!
+                     All Pattern Test Pass
+                       Cycle time = 7.7 ns
+          Your execution cycles = 18000 cycles
+======================================================== [1;0m
+$finish called from file "PATTERN.v", line 486.
+$finish at simulation time            539073150
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 539073150 ps
+CPU Time:     71.010 seconds;       Data structure size:   2.9Mb
+Sun Apr 28 04:36:46 2024
+CPU time: 2.379 seconds to compile + .598 seconds to elab + .769 seconds to link + 71.056 seconds in simulation

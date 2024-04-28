@@ -1,0 +1,230 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : CNN
+Version: T-2022.03
+Date   : Sun Apr 28 04:35:51 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: count_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: conv_layer_reg[9][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CNN                enG50K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg[3]/CK (QDFFRBT)                0.00 #     0.00 r
+  count_reg[3]/Q (QDFFRBT)                 0.54       0.54 f
+  U9278/O (BUF6)                           0.23       0.76 f
+  U9118/O (BUF8CK)                         0.18       0.94 f
+  U5993/O (ND2F)                           0.19       1.13 r
+  U4587/O (OR2P)                           0.23       1.36 r
+  U5582/O (INV4)                           0.12       1.48 f
+  U5116/O (ND2P)                           0.10       1.58 r
+  U6415/O (ND2)                            0.14       1.72 f
+  U6414/O (NR2P)                           0.15       1.87 r
+  U6413/O (ND3P)                           0.12       1.99 f
+  U4851/O (NR2P)                           0.18       2.17 r
+  U6418/O (ND3HT)                          0.17       2.34 f
+  U7175/O (BUF6CK)                         0.22       2.55 f
+  U4316/O (XNR2HS)                         0.21       2.76 f
+  U10628/O (OAI22S)                        0.38       3.14 r
+  U10816/S (FA1)                           0.69       3.83 r
+  U5940/O (INV2)                           0.07       3.90 f
+  U7008/O (MOAI1H)                         0.26       4.16 r
+  U5237/O (XNR2HS)                         0.26       4.41 r
+  U9028/O (XNR2H)                          0.30       4.71 r
+  U4030/O (NR2T)                           0.14       4.85 f
+  U6997/O (MOAI1HP)                        0.24       5.08 r
+  U5198/O (ND2P)                           0.11       5.19 f
+  U5193/O (INV3)                           0.11       5.31 r
+  U6992/O (NR2F)                           0.10       5.41 f
+  U5183/O (INV8)                           0.10       5.50 r
+  U4669/O (ND2P)                           0.15       5.65 f
+  U7006/O (ND2T)                           0.12       5.77 r
+  U7302/O (ND3HT)                          0.13       5.90 f
+  U5180/O (OAI12HP)                        0.11       6.01 r
+  U7301/O (INV3)                           0.09       6.10 f
+  U7297/O (MOAI1HT)                        0.14       6.23 r
+  U9112/O (XNR2HP)                         0.17       6.40 r
+  U5926/O (XNR2HT)                         0.18       6.58 r
+  U6318/O (XOR2HT)                         0.18       6.76 r
+  U5176/O (XOR2HP)                         0.22       6.98 r
+  U6650/OB (MXL2HT)                        0.15       7.13 f
+  U6816/O (INV12)                          0.16       7.29 r
+  U6823/OB (MXL2HS)                        0.15       7.44 f
+  conv_layer_reg[9][15]/D (QDFFN)          0.00       7.44 f
+  data arrival time                                   7.44
+
+  clock clk (rise edge)                    7.70       7.70
+  clock network delay (ideal)              0.00       7.70
+  clock uncertainty                       -0.10       7.60
+  conv_layer_reg[9][15]/CK (QDFFN)         0.00       7.60 r
+  library setup time                      -0.16       7.44
+  data required time                                  7.44
+  -----------------------------------------------------------
+  data required time                                  7.44
+  data arrival time                                  -7.44
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: count_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: conv_layer_reg[10][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CNN                enG50K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg[3]/CK (QDFFRBT)                0.00 #     0.00 r
+  count_reg[3]/Q (QDFFRBT)                 0.54       0.54 f
+  U9278/O (BUF6)                           0.23       0.76 f
+  U9118/O (BUF8CK)                         0.18       0.94 f
+  U5993/O (ND2F)                           0.19       1.13 r
+  U4587/O (OR2P)                           0.23       1.36 r
+  U5582/O (INV4)                           0.12       1.48 f
+  U5116/O (ND2P)                           0.10       1.58 r
+  U6415/O (ND2)                            0.14       1.72 f
+  U6414/O (NR2P)                           0.15       1.87 r
+  U6413/O (ND3P)                           0.12       1.99 f
+  U4851/O (NR2P)                           0.18       2.17 r
+  U6418/O (ND3HT)                          0.17       2.34 f
+  U7175/O (BUF6CK)                         0.22       2.55 f
+  U4316/O (XNR2HS)                         0.21       2.76 f
+  U10628/O (OAI22S)                        0.38       3.14 r
+  U10816/S (FA1)                           0.69       3.83 r
+  U5940/O (INV2)                           0.07       3.90 f
+  U7008/O (MOAI1H)                         0.26       4.16 r
+  U5237/O (XNR2HS)                         0.26       4.41 r
+  U9028/O (XNR2H)                          0.30       4.71 r
+  U4030/O (NR2T)                           0.14       4.85 f
+  U6997/O (MOAI1HP)                        0.24       5.08 r
+  U5198/O (ND2P)                           0.11       5.19 f
+  U5193/O (INV3)                           0.11       5.31 r
+  U6992/O (NR2F)                           0.10       5.41 f
+  U5183/O (INV8)                           0.10       5.50 r
+  U4669/O (ND2P)                           0.15       5.65 f
+  U7006/O (ND2T)                           0.12       5.77 r
+  U7302/O (ND3HT)                          0.13       5.90 f
+  U5180/O (OAI12HP)                        0.11       6.01 r
+  U7301/O (INV3)                           0.09       6.10 f
+  U7297/O (MOAI1HT)                        0.14       6.23 r
+  U9112/O (XNR2HP)                         0.17       6.40 r
+  U5926/O (XNR2HT)                         0.18       6.58 r
+  U6318/O (XOR2HT)                         0.18       6.76 r
+  U5176/O (XOR2HP)                         0.22       6.98 r
+  U6650/OB (MXL2HT)                        0.15       7.13 f
+  U6816/O (INV12)                          0.16       7.29 r
+  U6821/OB (MXL2HS)                        0.15       7.44 f
+  conv_layer_reg[10][15]/D (QDFFN)         0.00       7.44 f
+  data arrival time                                   7.44
+
+  clock clk (rise edge)                    7.70       7.70
+  clock network delay (ideal)              0.00       7.70
+  clock uncertainty                       -0.10       7.60
+  conv_layer_reg[10][15]/CK (QDFFN)        0.00       7.60 r
+  library setup time                      -0.16       7.44
+  data required time                                  7.44
+  -----------------------------------------------------------
+  data required time                                  7.44
+  data arrival time                                  -7.44
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: count_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: conv_layer_reg[11][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CNN                enG50K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  count_reg[3]/CK (QDFFRBT)                0.00 #     0.00 r
+  count_reg[3]/Q (QDFFRBT)                 0.54       0.54 f
+  U9278/O (BUF6)                           0.23       0.76 f
+  U9118/O (BUF8CK)                         0.18       0.94 f
+  U5993/O (ND2F)                           0.19       1.13 r
+  U4587/O (OR2P)                           0.23       1.36 r
+  U5582/O (INV4)                           0.12       1.48 f
+  U5116/O (ND2P)                           0.10       1.58 r
+  U6415/O (ND2)                            0.14       1.72 f
+  U6414/O (NR2P)                           0.15       1.87 r
+  U6413/O (ND3P)                           0.12       1.99 f
+  U4851/O (NR2P)                           0.18       2.17 r
+  U6418/O (ND3HT)                          0.17       2.34 f
+  U7175/O (BUF6CK)                         0.22       2.55 f
+  U4316/O (XNR2HS)                         0.21       2.76 f
+  U10628/O (OAI22S)                        0.38       3.14 r
+  U10816/S (FA1)                           0.69       3.83 r
+  U5940/O (INV2)                           0.07       3.90 f
+  U7008/O (MOAI1H)                         0.26       4.16 r
+  U5237/O (XNR2HS)                         0.26       4.41 r
+  U9028/O (XNR2H)                          0.30       4.71 r
+  U4030/O (NR2T)                           0.14       4.85 f
+  U6997/O (MOAI1HP)                        0.24       5.08 r
+  U5198/O (ND2P)                           0.11       5.19 f
+  U5193/O (INV3)                           0.11       5.31 r
+  U6992/O (NR2F)                           0.10       5.41 f
+  U5183/O (INV8)                           0.10       5.50 r
+  U4669/O (ND2P)                           0.15       5.65 f
+  U7006/O (ND2T)                           0.12       5.77 r
+  U7302/O (ND3HT)                          0.13       5.90 f
+  U5180/O (OAI12HP)                        0.11       6.01 r
+  U7301/O (INV3)                           0.09       6.10 f
+  U7297/O (MOAI1HT)                        0.14       6.23 r
+  U9112/O (XNR2HP)                         0.17       6.40 r
+  U5926/O (XNR2HT)                         0.18       6.58 r
+  U6318/O (XOR2HT)                         0.18       6.76 r
+  U5176/O (XOR2HP)                         0.22       6.98 r
+  U6650/OB (MXL2HT)                        0.15       7.13 f
+  U6816/O (INV12)                          0.16       7.29 r
+  U6827/OB (MXL2HS)                        0.15       7.44 f
+  conv_layer_reg[11][15]/D (QDFFS)         0.00       7.44 f
+  data arrival time                                   7.44
+
+  clock clk (rise edge)                    7.70       7.70
+  clock network delay (ideal)              0.00       7.70
+  clock uncertainty                       -0.10       7.60
+  conv_layer_reg[11][15]/CK (QDFFS)        0.00       7.60 r
+  library setup time                      -0.16       7.44
+  data required time                                  7.44
+  -----------------------------------------------------------
+  data required time                                  7.44
+  data arrival time                                  -7.44
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

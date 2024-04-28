@@ -1,0 +1,22 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sun Apr 28 04:30:10 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               3
+    Cells do not drive (LINT-1)                                     3
+
+Nets                                                                2
+    Unloaded nets (LINT-2)                                          2
+--------------------------------------------------------------------------------
+
+Warning: In design 'CNN', cell 'B_134' does not drive any nets. (LINT-1)
+Warning: In design 'CNN', cell 'B_135' does not drive any nets. (LINT-1)
+Warning: In design 'CNN', cell 'B_137' does not drive any nets. (LINT-1)
+Warning: In design 'CNN', net 'net353' driven by pin 'C6924/Z' has no loads. (LINT-2)
+Warning: In design 'CNN', net 'net352' driven by pin 'C6914/Z' has no loads. (LINT-2)
+1
