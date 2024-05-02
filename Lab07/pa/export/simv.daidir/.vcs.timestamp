@@ -1,0 +1,165 @@
+0 
+30
++alwaystrigger
++incdir+/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/etc/hdlcosim/vcs
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/bin/gcc
+-Mcfl= -pipe -fPIC -O -I/usr/cad/synopsys/vcs/2022.06/include
+-Mcplusplus=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/bin/g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -Wl,-rpath=/RAID2/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/gnu/gcc-6.2.0-64/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../lib64 -Xlinker -Eexport-dynamic -rdynamic
+-Mobjects= /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvirsim.so /usr/cad/synopsys/vcs/2022.06/linux64/lib/liberrorinf.so /usr/cad/synopsys/vcs/2022.06/linux64/lib/libsnpsmalloc.so /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvfs.so /usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/lib-gcc-6.2.0-64/libCwrVcs.so
+-Mout=simv
+-Msaverestoreobj=/usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/cad/synopsys/vcs/2022.06/include
+-Mxllcflags=
+-P
+-gen_obj
+-o simv
+-picarchive
+/usr/cad/synopsys/vcs/2022.06/linux64/bin/vcs1
+simv
+/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/etc/hdlcosim/vcs/cwrvcspli.tab
+/RAID2/COURSE/DCS/DCS111/Lab07/pa/ALU.v
+Debug/ConvergenSC/cosim/cwr_cosim_shell.v
+Debug/ConvergenSC/cosim/cwr_cosim_top.v
+117
+mraarch=linux_64
+installdir=/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice
+XLOCALEDIR=/usr/cad/synopsys/icc2/2021.06-sp5//etc/locale
+XDG_SESSION_ID=118732
+XDG_RUNTIME_DIR=/run/user/13306
+VRE_LIB_ROOT=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/InnoRuntime/Libraries
+VMR_MODE_FLAG=32
+VERDI_HOME=/usr/cad/synopsys/verdi/2019.06/
+VENDOR=unknown
+VC_STATIC_HOME=/usr/cad/synopsys/vc_formal/cur/
+VCS_TARGET_ARCH=amd64
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_HOME=/usr/cad/synopsys/vcs/2022.06
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_CC=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/bin/gcc
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+VCSI_HOME=/usr/cad/synopsys/vcs/2022.06
+USING_PCT_GUI=1
+UNAME=/bin/uname
+TOOL_HOME=/usr/cad/synopsys/vcs/2022.06/linux64
+TMIARCH=RH_64
+TK_LIBRARY=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/scsh/lib/tk8.5
+TCL_LIBRARY=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/scsh/lib/tcl8.5
+SYN_MAN_DIR=/usr/cad/synopsys/star-rcxt/2019.12-sp5-3//starrc/man
+SYNOPSYS_NCX_ROOT=/usr/cad/synopsys/star-rcxt/2019.12-sp5-3/
+SYNOPSYS_LC_ROOT=/cad/synopsys/lc/cur
+SYNOPSYS=/usr/cad/synopsys/synthesis/cur/
+SSH_TTY=/dev/pts/9
+SSH_CONNECTION=140.113.69.154 4791 140.113.201.30 415
+SSH_CLIENT=140.113.69.154 4791 415
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SPECMAN_COWARE_SYSTEMC_ADAPTER=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/lib-gcc-6.2.0-64/libsystemc_adapter_body.so
+SPAPI_AHDL_INCLUDE=/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/include
+SNPS_VP_UBUNTU=
+SNPS_VP_PRODUCT=PA
+SNPS_VP_HTYPE=linux
+SNPS_VP_HOME=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux
+SNPS_VP_DOC=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/../../Documentation
+SNPS_VP_COMPILER=gcc-6.2
+SNPS_VIEW_CONFIG_PATH=/RAID2/COURSE/DCS/DCS111/.synopsys/viewconfig:/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/IP:/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/etc/viewconfig
+SNPS_VCS_CLANG_PATH=/usr/cad/synopsys/vcs/2022.06/linux64/clang
+SNPS_PLATFORM=linux64
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SNPS_64=1
+SHLIB_PATH=/usr/cad/synopsys/verdi/2019.06//etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/2019.06//share/PLI/lib/LINUX64/:/usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/:
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SCL_IGNORE_LANG=1
+REMOTEHOST=140.113.69.154
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+POWERVIEW_64=1
+PCTHOME=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/pc
+OVA_UUM=0
+OSTYPE=linux
+NC_INSTALLED_AT=/usr/cad/cadence/INCISIV/cur
+MGLS_LICENSE_FILE=1717@lshc
+MGC_TMPDIR=/tmp
+MGC_LOCATION_MAP=NO_MAP
+MGC_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
+MFLAGS=-s
+MAKELEVEL=1
+MAKEFLAGS=s
+Laker_TCL_ToolBox=1
+Laker_TCL_L3=1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+JGOLD_dir=/RAID2/eda/jasper_2021.03/
+ITCL_LIBRARY=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/scsh/lib/itcl3.3
+INSTALL_DIR=/usr/cad/synopsys/vcs/2022.06
+ICV_HOME_DIR=/usr/cad/synopsys/icvalidator/2021.06-sp2/
+HSP_SIGMA_AMP=/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/python/Omega/Omega
+HSP_HOME=/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice
+HSP_GCC_VERSION=7.3.0
+HSP_GCC=/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/GNU/linux64/gcc/bin/gcc -m64 
+HOSTTYPE=x86_64-linux
+GROUP=DCS
+FINEWAVE_64=1
+FINESIM_64=1
+C_WZD_DIR=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/pc/plugins/cwizard/config
+CWR_SYSTEMC_MODULE_INSTANCES=Debug/ConvergenSC/cosim/systems_module.instance
+CWR_SYSTEMC_MODULE_DESCRIPTIONS=Debug/ConvergenSC/cosim/systemc_module_from_hdl.info
+CWR_SYSTEMC_ADAPTER_MODE=none
+CWR_SYSCSIMULATOR=Debug/sim.so
+CWR_SPECMAN_MODE=interactive
+CWR_SIMULATION_BUILD_DIR=Debug
+CWR_SC_ADAPTER_BOOT_LIB=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/lib-gcc-6.2.0-64/libsystemc_adapter_boot.so
+CWR_SCSIM_PREFIX=no_prefix
+CWR_HDL_SIMULATOR=vcs
+CWR_HDL_COSIM_DIR=Debug/ConvergenSC/cosim
+CWR_COSIM_BATCH=true
+CWR_COSIM_ARGS_FILENAME=./.command_args
+COWARE_PRODUCT=PA
+COWARE_MONITORS_PATH=/RAID2/COURSE/DCS/DCS111/.synopsys/monitors:/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/IP
+COWARE_JRE=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/../linux/java
+COWARE_CXX_COMPILER=gcc-6.2.0-64
+COWARE_AUX_BIN=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/bin
+COWAREIPDIR=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/IP
+COWAREHT=linux
+COWAREHOME=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux
+COWAREDOC_INSTALLED_AT=/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/../../Documentation
+CMIARCH=RH_64
+CDS_TOOLS=/usr/cad/cadence/INCISIV/cur/tools.lnx86
+CDS_Netlisting_Mode=Analog
+CDS_LOAD_ENV=CSF
+CDS_LIB=/usr/cad/cadence/INCISIV/cur/tools.lnx86/lib
+CDS_INST_DIR=/usr/cad/cadence/INCISIV/cur
+CDS_AUTO_64BIT=ALL
+CDSHOME=/usr/cad/cadence/IC/IC_06.18.250
+CDPL_HOME=/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/cdpl
+CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
+ARCH=linux64
+0
+0
+4
+1714675383 Debug/ConvergenSC/cosim/cwr_cosim_top.v
+1714675383 Debug/ConvergenSC/cosim/cwr_cosim_shell.v
+1714558108 /RAID2/COURSE/DCS/DCS111/Lab07/pa/ALU.v
+1576355795 /usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/etc/hdlcosim/vcs/cwrvcspli.tab
+5
+1654054205 /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvirsim.so
+1654053585 /usr/cad/synopsys/vcs/2022.06/linux64/lib/liberrorinf.so
+1654053489 /usr/cad/synopsys/vcs/2022.06/linux64/lib/libsnpsmalloc.so
+1654053565 /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvfs.so
+1576524226 /usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/lib-gcc-6.2.0-64/libCwrVcs.so
+1714675386 simv.daidir
+-1 partitionlib

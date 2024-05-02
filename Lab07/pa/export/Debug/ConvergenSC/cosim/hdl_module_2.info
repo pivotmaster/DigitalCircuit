@@ -1,0 +1,17 @@
+hdl_simulator = vcs
+
+hdl_proxy_name = HARDWARE.i_ALU
+hdl_module_name = ALU
+hdl_library_name = CWR_HDL_WORK
+map_ports_by = index
+ports = (
+  opcode : in sc_uint 3
+  rs_data : in sc_uint 16
+  rt_data : in sc_uint 16
+  immediate : in sc_uint 5
+  ALU_out : out sc_uint 16
+)
+verilog_source_files = (
+  CWR_HDL_WORK;/RAID2/COURSE/DCS/DCS111/Lab07/pa/ALU.v
+)
+hdl_language_type = VERILOG

@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1714675306.792672130, "rt":0.72, "ut":0.14, "st":0.14}}
+{"vcselab":{"timestamp_begin":1714675307.606669493, "rt":0.51, "ut":0.16, "st":0.03}}
+{"link":{"timestamp_begin":1714675308.207065898, "rt":0.58, "ut":0.15, "st":0.20}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1714675306.242755301}
+{"VCS_COMP_START_TIME": 1714675306.242755301}
+{"VCS_COMP_END_TIME": 1714675308.930353966}
+{"VCS_USER_OPTIONS": "-cpp /usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/bin/g++ -cc /usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/bin/gcc -LDFLAGS -Wl,-rpath=/RAID2/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/gnu/gcc-6.2.0-64/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../lib64 +incdir+/usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/etc/hdlcosim/vcs /RAID2/COURSE/DCS/DCS111/Lab07/pa/ALU.v Debug/ConvergenSC/cosim/cwr_cosim_shell.v Debug/ConvergenSC/cosim/cwr_cosim_top.v -o simv +vpi -P /usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/etc/hdlcosim/vcs/cwrvcspli.tab /usr/cad/synopsys/pa_virtualizer/O-2018.09-SP2-4/SLS/linux/common/lib-gcc-6.2.0-64/libCwrVcs.so -LDFLAGS -Xlinker -Eexport-dynamic +alwaystrigger"}
+{"vcs1": {"peak_mem": 431504}}
+{"stitch_vcselab": {"peak_mem": 316496}}
