@@ -1,0 +1,48 @@
+#!/bin/bash
+
+
+
+########################################################################
+# TA Set Up Paremeter Here
+########################################################################
+LAB=Lab08
+DEMO=demo
+
+NO_COLOR='\033[0m'
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+
+########################################################################
+# (1) Download File
+########################################################################
+
+# if [ -z "$DEMO" ]; then
+#    echo "Please input argument."
+#    echo -e "Only accept \e[31min-class\e[0m or \e[31mafter-class\e[0m! "
+#    exit 1
+# fi
+# if [ $DEMO != in-class ] && [ $DEMO != after-class ] ; then
+#    echo -e "\e[31mWrong argument\e[0m."
+#    echo -e "Only accept \e[31min-class\e[0m or \e[31mafter-class\e[0m!"
+#    exit 1
+# fi
+
+ID=$(whoami)
+ID_DIRECTORY="$LAB"_"$ID"
+FILESYSTEM=~DCSTA03
+target_file="$FILESYSTEM"/"$LAB"/"code"/"$LAB"_"$ID".tar.gz
+target_result_file="$FILESYSTEM"/"$LAB"/"$DEMO"/DEMO_RESULT_"$ID".csv
+# echo $target_result_file
+if [ ! -f $target_file ]; then
+    echo -e "$RED You haven't uploaded yet!$NO_COLOR"
+    exit 1
+fi
+if [ ! -f $target_result_file ]; then
+    echo -e "$RED You haven't uploaded DEMO_RESULT_.csv! $NO_COLOR"
+    exit 1
+fi
+cp $target_file ./"$LAB"_"$ID"_"$DEMO".tar.gz
+cp $target_result_file ./DEMO_RESULT_"$ID".csv
+echo -e "$GREEN "$LAB"_"$ID"_"$DEMO".tar.gz $NO_COLOR has been downloaded!"
+echo -e "$GREEN DEMO_RESULT_"$ID".csv $NO_COLOR has been downloaded!"
+cat DEMO_RESULT_"$ID".csv
