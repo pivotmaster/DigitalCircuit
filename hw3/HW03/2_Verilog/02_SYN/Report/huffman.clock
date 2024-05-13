@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : clocks
+Design : huffman
+Version: T-2022.03
+Date   : Mon May 13 23:02:27 2024
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk             20.00   {0 10}              d f       {clk}
+--------------------------------------------------------------------------------
+1

@@ -1,0 +1,33 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Mon May 13 22:58:27 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                               19
+    Unloaded nets (LINT-2)                                         19
+--------------------------------------------------------------------------------
+
+Warning: In design 'huffman', net 'net425' driven by pin 'C5920/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net424' driven by pin 'C5915/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net423' driven by pin 'C5911/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net422' driven by pin 'C5906/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net421' driven by pin 'C5902/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net420' driven by pin 'C5897/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net419' driven by pin 'C5893/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net418' driven by pin 'C5888/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net417' driven by pin 'C5884/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net416' driven by pin 'C5879/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net415' driven by pin 'C5875/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net414' driven by pin 'C5870/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net413' driven by pin 'C5847/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net412' driven by pin 'C5846/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net411' driven by pin 'C5845/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net410' driven by pin 'C5844/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net409' driven by pin 'C5843/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net408' driven by pin 'C5842/Z' has no loads. (LINT-2)
+Warning: In design 'huffman', net 'net407' driven by pin 'C5841/Z' has no loads. (LINT-2)
+1

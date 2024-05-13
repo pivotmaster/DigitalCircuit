@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Function to copy files and output message based on success or failure
+copy_file() {
+    src=$1
+    dst=$2
+    cp "$src" "$dst"
+    if [ $? -eq 0 ]; then
+        echo -e "\e[32m$(basename "$src") copy successful!\e[0m"  # 32 represents green color, 0 resets color to default
+    else
+        echo -e "\e[31m$(basename "$src") copy failed!\e[0m"  # 31 represents red color, 0 resets color to default
+    fi
+}
+
+# Copy sort.h
+copy_file "../1_SystemC/sort.h" "sort.h"
+
+# Copy sort.cpp
+copy_file "../1_SystemC/sort.cpp" "sort.cpp"
+
+# Copy huffman.v
+copy_file "../2_Verilog/01_RTL/huffman.v" "huffman.v"

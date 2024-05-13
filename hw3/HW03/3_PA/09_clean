@@ -1,0 +1,12 @@
+#!/bin/bash
+
+rm -rf *.h
+rm -rf *.cpp
+rm -rf huffman.v
+rm -rf *.xml
+rm -rf cwr/
+rm -rf export/
+rm -rf simv.daidir/
+rm -rf work/
+rm -rf .clean_up.sh
+echo -e "\e[33mCleaned up All files\e[0m"

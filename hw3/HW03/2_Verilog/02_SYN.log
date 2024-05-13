@@ -1,0 +1,904 @@
+dcnxt_shell -f "syn.tcl"       	 -x "set_host_options -max_cores 8               " -output_log_file "syn.log"       	
+
+                            Design Compiler (R) NXT 
+
+                 Version T-2022.03 for linux64 - Feb 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+#======================================================
+#
+# Synopsys Synthesis Scripts (Design Vision dctcl mode)
+#
+#======================================================
+#======================================================
+# (A) Global Parameters
+#======================================================
+set DESIGN "huffman"
+huffman
+set CYCLE 20
+20
+# set DESIGN "sort"
+# set CYCLE 2
+set INPUT_DLY [expr 0.5*$CYCLE]
+10.0
+set OUTPUT_DLY [expr 0.5*$CYCLE]
+10.0
+#======================================================
+# (B) Read RTL Code
+#======================================================
+# (B-1) analyze + elaborate
+set hdlin_auto_save_templates TRUE
+TRUE
+analyze -f sverilog $DESIGN\.v 
+Running PRESTO HDLC
+Compiling source file ../01_RTL/huffman.v
+Presto compilation completed successfully.
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+1
+elaborate $DESIGN  
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/standard.sldb'
+  Loading link library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading link library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading link library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading link library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../01_RTL/huffman.v:194: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/huffman.v:195: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/huffman.v:196: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/huffman.v:197: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/huffman.v:198: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/huffman.v:199: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/huffman.v:213: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/huffman.v:218: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/huffman.v:226: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/huffman.v:84: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 83 in file
+	'../01_RTL/huffman.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            84            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 129 in file
+	'../01_RTL/huffman.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           138            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine huffman line 74 in file
+		'../01_RTL/huffman.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine huffman line 119 in file
+		'../01_RTL/huffman.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| buffer_gray_date_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine huffman line 129 in file
+		'../01_RTL/huffman.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       a5_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       a0_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       a1_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       a2_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       a3_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       a4_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine huffman line 169 in file
+		'../01_RTL/huffman.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     in_CNT_reg      | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+|    CNT_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       CNT_reg       | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     in_Aid_reg      | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+|  already_input_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  work_finished_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       ID_reg        | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+|     ID_num_reg      | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      Code_reg       | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+|      Mask_reg       | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+|     Pointer_reg     | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine huffman line 246 in file
+		'../01_RTL/huffman.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       HC_reg        | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+|   code_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|        M_reg        | Flip-flop |  48   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (huffman)
+Elaborated 1 design.
+Current design is now 'huffman'.
+1
+# (B-2) read_sverilog
+#read_sverilog $DESIGN\.v
+# (B-3) set current design
+current_design $DESIGN
+Current design is 'huffman'.
+{huffman}
+link
+
+  Linking design 'huffman'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  huffman                     /RAID2/COURSE/DCS/DCS111/HW03/2_Verilog/02_SYN/huffman.db
+  fsa0m_a_generic_core_ss1p62v125c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db
+  fsa0m_a_generic_core_ff1p98vm40c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db
+  fsa0m_a_t33_generic_io_ss1p62v125c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db
+  fsa0m_a_t33_generic_io_tt1p8v25c (library) /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+#======================================================
+#  (C) Global Setting
+#======================================================
+set_wire_load_mode top
+1
+set_operating_conditions -max WCCOM -min BCCOM
+Using operating conditions 'WCCOM' found in library 'fsa0m_a_generic_core_ss1p62v125c'.
+Using operating conditions 'BCCOM' found in library 'fsa0m_a_generic_core_ff1p98vm40c'.
+1
+# set_wire_load_model -name umc18_wl10 -library slow
+#======================================================
+#  (D) Set Design Constraints
+#======================================================
+# (D-1) Setting Clock Constraints
+create_clock -name clk -period $CYCLE [get_ports clk] 
+1
+set_dont_touch_network             [get_clocks clk]
+1
+set_fix_hold                       [get_clocks clk]
+1
+set_clock_uncertainty       0.1    [get_clocks clk]
+1
+# set_clock_latency   -source 0      [get_clocks clk]
+# set_clock_latency           1      [get_clocks clk] 
+set_input_transition        0.5    [all_inputs] 
+1
+set_clock_transition        0.1    [all_clocks] 
+1
+# (D-2) Setting in/out Constraints
+set_input_delay   -max  $INPUT_DLY  -clock clk   [all_inputs] ;  # set_up time check 
+1
+set_input_delay   -min  0           -clock clk   [all_inputs] ;  # hold   time check 
+1
+set_output_delay  -max  $OUTPUT_DLY -clock clk   [all_outputs] ; # set_up time check 
+1
+set_output_delay  -min  0           -clock clk   [all_outputs] ; # hold   time check 
+1
+set_input_delay 0 -clock clk clk
+1
+set_input_delay 0 -clock clk reset
+1
+#set_max_delay $CYCLE -from [all_inputs] -to [all_outputs]
+# (D-3) Setting Design Environment
+# set_driving_cell -library umc18io3v5v_slow -lib_cell P2C    -pin {Y}  [get_ports clk]
+# set_driving_cell -library umc18io3v5v_slow -lib_cell P2C    -pin {Y}  [remove_from_collection [all_inputs] [get_ports clk]]
+# set_load  [load_of "umc18io3v5v_slow/P8C/A"]       [all_outputs] ; # ~= 0.038
+set_load 0.05 [all_outputs]
+1
+# (D-4) Setting DRC Constraint
+#set_max_delay           0     ; # Optimize delay max effort                 
+#set_max_area            0      ; # Optimize area max effort           
+set_max_transition      3       [all_inputs]   ; # U18 LUT Max Transition Value  
+1
+set_max_capacitance     0.15    [all_inputs]   ; # U18 LUT Max Capacitance Value
+1
+set_max_fanout          10      [all_inputs]
+1
+# set_dont_use slow/JKFF*
+#set_dont_touch [get_cells core_reg_macro]
+#set hdlin_ff_always_sync_set_reset true
+# (D-5) Report Clock skew
+report_clock -skew clk
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Updating design information... (UID-85)
+Warning: Design 'huffman' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clock_skew
+Design : huffman
+Version: T-2022.03
+Date   : Mon May 13 22:58:27 2024
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk                 -         -         -         -      0.10      0.10
+
+                 Max Transition      Min Transition
+Object           Rise      Fall      Rise      Fall
+-------------------------------------------------------
+clk              0.10      0.10      0.10      0.10
+1
+check_timing
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+#======================================================
+#  (E) Optimization
+#======================================================
+check_design > Report/$DESIGN\.check
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+set_fix_hold [all_clocks]
+1
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db"
+Analyzing: "/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db"
+Analyzing: "/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db"
+Analyzing: "/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db"
+Library analysis succeeded.
+Information: Running optimization using a maximum of 8 cores. (OPT-1500)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT WLM                                                           |
+| Comand line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2010                                   |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 670                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch cells                              | 219                                    |
+| Number of Dont Touch nets                               | 1                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 19 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'huffman'
+
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ss1p62v125c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ff1p98vm40c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_ss1p62v125c.db.alib' (placeholder)
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_tt1p8v25c.db.alib' (placeholder)
+Warning: Operating condition WCCOM set on design huffman has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fsa0m_a_generic_core_ff1p98vm40c is characterized. Delays may be inaccurate as a result. (OPT-998)
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'huffman'
+Information: Added key list 'DesignWare' to design 'huffman'. (DDB-72)
+Information: The register 'in_Aid_reg[0][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'in_Aid_reg[0][0]' is a constant and will be removed. (OPT-1206)
+Information: In design 'huffman', the register 'in_Aid_reg[0][5]' is removed because it is merged to 'in_Aid_reg[0][6]'. (OPT-1215)
+Information: In design 'huffman', the register 'in_Aid_reg[0][4]' is removed because it is merged to 'in_Aid_reg[0][6]'. (OPT-1215)
+Information: In design 'huffman', the register 'in_Aid_reg[0][3]' is removed because it is merged to 'in_Aid_reg[0][6]'. (OPT-1215)
+Information: In design 'huffman', the register 'in_Aid_reg[0][6]' is removed because it is merged to 'in_Aid_reg[0][1]'. (OPT-1215)
+Information: In design 'huffman', the register 'in_Aid_reg[0][2]' is removed because it is merged to 'in_Aid_reg[0][1]'. (OPT-1215)
+ Implement Synthetic for 'huffman'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIE1' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIE0' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'BHD1' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: The register 'ID_num_reg[31]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[30]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[29]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[28]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[27]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[26]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[25]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[24]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[23]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[22]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[21]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[20]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[19]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[18]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[17]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[16]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[15]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[14]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[13]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[12]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[11]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[10]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[9]' will be removed. (OPT-1207)
+Information: The register 'ID_num_reg[8]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[31]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[30]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[29]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[28]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[26]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[24]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[22]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[20]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[18]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[16]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[14]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[12]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[10]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[8]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[9]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[11]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[13]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[15]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[17]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[19]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[21]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[23]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[25]' will be removed. (OPT-1207)
+Information: The register 'a5_reg[27]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[31]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[30]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[29]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[28]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[26]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[24]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[22]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[20]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[18]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[16]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[14]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[12]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[10]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[8]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[9]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[11]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[13]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[15]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[17]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[19]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[21]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[23]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[25]' will be removed. (OPT-1207)
+Information: The register 'a4_reg[27]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[31]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[30]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[29]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[28]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[26]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[24]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[22]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[20]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[18]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[16]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[14]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[12]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[10]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[8]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[9]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[11]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[13]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[15]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[17]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[19]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[21]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[23]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[25]' will be removed. (OPT-1207)
+Information: The register 'a3_reg[27]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[31]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[30]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[29]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[28]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[26]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[24]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[22]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[20]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[18]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[16]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[14]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[12]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[10]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[8]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[9]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[11]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[13]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[15]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[17]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[19]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[21]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[23]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[25]' will be removed. (OPT-1207)
+Information: The register 'a2_reg[27]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[31]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[30]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[29]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[28]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[26]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[24]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[22]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[20]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[18]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[16]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[14]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[12]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[10]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[8]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[9]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[11]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[13]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[15]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[17]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[19]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[21]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[23]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[25]' will be removed. (OPT-1207)
+Information: The register 'a1_reg[27]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[31]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[30]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[29]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[28]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[26]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[24]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[22]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[20]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[18]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[16]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[14]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[12]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[10]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[8]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[9]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[11]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[13]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[15]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[17]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[19]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[21]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[23]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[25]' will be removed. (OPT-1207)
+Information: The register 'a0_reg[27]' will be removed. (OPT-1207)
+Information: There is no timing violation in design huffman. Delay-based auto_ungroup will not be performed. (OPT-780)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:32   52906.0      0.00       0.0     117.4                           3405910.5000      0.00  
+    0:00:32   52906.0      0.00       0.0     117.4                           3405910.5000      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:33   52906.0      0.00       0.0     117.4                           3405910.5000      0.00  
+    0:00:33   52906.0      0.00       0.0     117.4                           3405910.5000      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:34   47559.5      0.00       0.0      21.7                           2843846.2500      0.00  
+    0:00:34   47559.5      0.00       0.0      21.7                           2843846.2500      0.00  
+    0:00:34   47559.5      0.00       0.0      21.7                           2843846.2500      0.00  
+    0:00:34   47309.5      0.00       0.0      21.7                           2926857.0000      0.00  
+    0:00:34   47290.7      0.00       0.0      21.7                           2926857.0000      0.00  
+    0:00:35   47290.7      0.00       0.0      21.7                           2926857.0000      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:35   47240.7      0.00       0.0      21.7                           2914809.5000      0.00  
+    0:00:35   47240.7      0.00       0.0      21.7                           2914809.5000      0.00  
+    0:00:35   47240.7      0.00       0.0      21.7                           2914809.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:35   47159.5      0.00       0.0      21.7                           2888405.5000      0.00  
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:00:35   47281.3      0.00       0.0       0.0                           2896053.2500      0.00  
+    0:00:35   47281.3      0.00       0.0       0.0                           2896053.2500      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:35   47281.3      0.00       0.0       0.0                           2896053.2500      0.00  
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+    0:00:36   47243.9      0.00       0.0       0.0                           2797626.0000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:36   47256.4      0.00       0.0       0.0                           2798401.5000      0.00  
+    0:00:37   47256.4      0.00       0.0       0.0                           2798401.5000      0.00  
+    0:00:37   47256.4      0.00       0.0       0.0                           2798401.5000      0.00  
+    0:00:37   47256.4      0.00       0.0       0.0                           2798401.5000      0.00  
+    0:00:37   47256.4      0.00       0.0       0.0                           2798401.5000      0.00  
+    0:00:37   47237.6      0.00       0.0       0.0                           2797238.2500      0.00  
+    0:00:37   47237.6      0.00       0.0       0.0                           2797238.2500      0.00  
+    0:00:37   47237.6      0.00       0.0       0.0                           2797238.2500      0.00  
+    0:00:37   47237.6      0.00       0.0       0.0                           2797238.2500      0.00  
+    0:00:37   47250.1      0.00       0.0       0.0                           2798013.7500      0.00  
+    0:00:37   47250.1      0.00       0.0       0.0                           2798013.7500      0.00  
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+#uniquify
+#compile
+#======================================================
+#  (F) Output Reports 
+#======================================================
+report_design  >  Report/$DESIGN\.design
+report_resource >  Report/$DESIGN\.resource
+report_timing -max_paths 3 >  Report/$DESIGN\.timing
+report_area >  Report/$DESIGN\.area
+report_power > Report/$DESIGN\.power
+report_clock > Report/$DESIGN\.clock
+report_port >  Report/$DESIGN\.port
+report_power >  Report/$DESIGN\.power
+#report_reference > Report/$DESIGN\.reference
+#======================================================
+#  (G) Change Naming Rule
+#======================================================
+set bus_inference_style "%s\[%d\]"
+%s[%d]
+set bus_naming_style "%s\[%d\]"
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _" -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _[]" -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+define_name_rules name_rule -case_insensitive
+1
+change_names -hierarchy -rules name_rule
+1
+#======================================================
+#  (H) Output Results
+#======================================================
+set verilogout_higher_designs_first true
+true
+write -format verilog -output Netlist/$DESIGN\_SYN.v -hierarchy
+Writing verilog file '/RAID2/COURSE/DCS/DCS111/HW03/2_Verilog/02_SYN/Netlist/huffman_SYN.v'.
+1
+write -format ddc     -hierarchy -output $DESIGN\_SYN.ddc
+Writing ddc file 'huffman_SYN.ddc'.
+1
+write_sdf -version 3.0 -context verilog -load_delay cell Netlist/$DESIGN\_SYN.sdf -significant_digits 6
+Information: Writing timing information to file '/RAID2/COURSE/DCS/DCS111/HW03/2_Verilog/02_SYN/Netlist/huffman_SYN.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write_sdc Netlist/$DESIGN\_SYN.sdc
+1
+#======================================================
+#  (I) Finish and Quit
+#======================================================
+report_area -designware -hierarchy
+ 
+****************************************
+Report : area
+Design : huffman
+Version: T-2022.03
+Date   : Mon May 13 23:02:28 2024
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+
+Number of ports:                          349
+Number of nets:                          2072
+Number of cells:                         1826
+Number of combinational cells:           1331
+Number of sequential cells:               495
+Number of macros/black boxes:               0
+Number of buf/inv:                        151
+Number of references:                      38
+
+Combinational area:              20023.718539
+Buf/Inv area:                      971.812790
+Noncombinational area:           27226.382496
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 47250.101035
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ---------
+huffman                           47250.1010    100.0  20023.7185  27226.3825  0.0000  huffman
+--------------------------------  ----------  -------  ----------  ----------  ------  ---------
+Total                                                  20023.7185  27226.3825  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Estimated area of ungrouped synthetic parts
+-------------------------------------------
+                            Estimated  Perc. of
+  Module   Implem.  Count        Area cell area
+  -------- -------  ----- ----------- ---------
+  DW01_add apparch      1    298.8336      0.6%
+  DW01_inc apparch     13   7098.9096     15.0%
+  DW_cmp   apparch     17    701.2051      1.5%
+  -------- -------  ----- ----------- ---------
+  Total:               31   8098.9483     17.1%
+
+Total synthetic cell area:              8098.9483  17.1%  (estimated)
+
+1
+report_timing 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : huffman
+Version: T-2022.03
+Date   : Mon May 13 23:02:28 2024
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: out_Aid_all[14]
+              (input port clocked by clk)
+  Endpoint: Pointer_reg_0__7_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  huffman            enG10K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    10.00      10.00 f
+  out_Aid_all[14] (in)                     0.00      10.00 f
+  U1631/O (INV1S)                          0.15      10.15 r
+  U1632/O (INV1S)                          0.61      10.77 f
+  U2038/O (MOAI1S)                         0.50      11.27 f
+  U2040/O (AN4B1S)                         0.38      11.65 f
+  U1466/O (AN3S)                           0.24      11.89 f
+  U1465/O (ND3S)                           0.17      12.06 r
+  U2045/O (OA13S)                          0.40      12.47 r
+  U2084/O (NR2)                            0.15      12.62 f
+  U1424/O (ND2S)                           1.00      13.62 r
+  U2148/O (INV1S)                          0.68      14.30 f
+  U1492/O (AO12S)                          0.47      14.77 f
+  U2528/O (NR2)                            0.24      15.01 r
+  U2531/O (OAI12HS)                        0.13      15.14 f
+  U2532/O (MOAI1S)                         0.40      15.54 f
+  Pointer_reg_0__7_/D (DFFS)               0.00      15.54 f
+  data arrival time                                  15.54
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.10      19.90
+  Pointer_reg_0__7_/CK (DFFS)              0.00      19.90 r
+  library setup time                      -0.15      19.75
+  data required time                                 19.75
+  -----------------------------------------------------------
+  data required time                                 19.75
+  data arrival time                                 -15.54
+  -----------------------------------------------------------
+  slack (MET)                                         4.21
+
+
+1
+exit
+
+Memory usage for this session 435 Mbytes.
+Memory usage for this session including child processes 641 Mbytes.
+CPU usage for this session 242 seconds ( 0.07 hours ).
+Elapsed time for this session 250 seconds ( 0.07 hours ).
+
+Thank you...
