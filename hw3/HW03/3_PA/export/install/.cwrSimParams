@@ -1,0 +1,13 @@
+dbname Default
+analysis off
+vmemmap mem_map
+vmemmapIsSimple 1
+syminfo 
+flushInterval 0
+flushIntervalUnit ns
+flushIntervalType simulated
+vmemPagingEnable disable
+vmemSwapDir .
+vmemPageSize 1048576
+vmemCacheSize 805306368
+vmemLazyCommit enable

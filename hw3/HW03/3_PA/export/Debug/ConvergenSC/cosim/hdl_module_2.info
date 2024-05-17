@@ -1,0 +1,50 @@
+hdl_simulator = vcs
+
+hdl_proxy_name = HARDWARE.i_PATTERN
+hdl_module_name = PATTERN
+hdl_library_name = CWR_HDL_WORK
+map_ports_by = index
+ports = (
+  clk : out bool 1
+  reset : out bool 1
+  gray_data : out sc_uint 8
+  gray_valid : out bool 1
+  CNT : in sc_uint 48
+  CNT_valid : in bool 1
+  HC : in sc_uint 48
+  M : in sc_uint 48
+  code_valid : in bool 1
+)
+parameters = (
+  CYCLE : int 20
+  MAX_LATENCY : int 100
+)
+verilog_source_files = (
+  CWR_HDL_WORK;/RAID2/COURSE/DCS/DCS111/HW03/3_PA/huffman.v
+  CWR_HDL_WORK;/RAID2/COURSE/DCS/DCS111/HW03/3_PA/PATTERN.v
+)
+hdl_language_type = VERILOG
+hdl_proxy_name = HARDWARE.i_huffman
+hdl_module_name = huffman
+hdl_library_name = CWR_HDL_WORK
+map_ports_by = index
+ports = (
+  clk : in bool 1
+  reset : in bool 1
+  gray_valid : in bool 1
+  gray_data : in sc_uint 8
+  CNT_valid : out bool 1
+  CNT : out sc_uint 48
+  code_valid : out bool 1
+  HC : out sc_uint 48
+  M : out sc_uint 48
+  in_Aid_all : out sc_uint 48
+  in_CNT_all : out sc_uint 48
+  out_Aid_all : in sc_uint 48
+  out_CNT_all : in sc_uint 48
+)
+verilog_source_files = (
+  CWR_HDL_WORK;/RAID2/COURSE/DCS/DCS111/HW03/3_PA/huffman.v
+  CWR_HDL_WORK;/RAID2/COURSE/DCS/DCS111/HW03/3_PA/PATTERN.v
+)
+hdl_language_type = VERILOG

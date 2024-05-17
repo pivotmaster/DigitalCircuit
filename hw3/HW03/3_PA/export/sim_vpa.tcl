@@ -1,0 +1,1 @@
+vpa::start_simulation Debug/sim {/RAID2/COURSE/DCS/DCS111/HW03/3_PA/export} {--cwr_wait --cwr_properties_xml Properties.xml} 120
