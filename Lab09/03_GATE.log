@@ -1,0 +1,1307 @@
+vcs -timescale=1ns/1fs -j8                -sverilog +v2k -full64 -Mupdate -R -debug_access+all -y /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ +libext+.v -f "filelist.f"	 -o "simv"      	 -l "vcs.log"      	 -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a -v ~iclabTA01/UMC018_CBDK/CIC/Verilog/fsa0m_a_generic_core_30.lib.src +define+GATE +neg_tchk +nowarnNTCDSN
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Fri May 17 20:47:41 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'TESTBED.v'
+Parsing included file 'PATTERN.v'.
+Back to file 'TESTBED.v'.
+Parsing included file 'P_MUL_SYN.v'.
+Back to file 'TESTBED.v'.
+Parsing library file '/RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/Verilog/fsa0m_a_generic_core_30.lib.src'
+Top Level Modules:
+       TESTBED
+TimeScale is 10 ps / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+P_MUL_SYN.v, 1683
+P_MUL, "DFCRBN A2B2_reg_16_( .D (n12351),  .RB (n12350),  .CK (clk),  .QB (N483));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+P_MUL_SYN.v, 1684
+P_MUL, "DFCRBN A2B1_reg_53_( .D (n12349),  .RB (n12348),  .CK (clk),  .QB (A2B1[53]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "P_MUL_SYN.sdf"
+   ***    Annotation scope: TESTBED.I_P_MUL
+   ***    No MTM selection argument specified
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    MTM selection defaulted to "TOOL_CONTROL":
+               (+typdelays compiled, TYPICAL delays selected)
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Fri May 17 20:47:43 2024
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+P_MUL_SYN.sdf, 189892
+module: QDFFRBP, "instance: TESTBED.I_P_MUL.i_reg_0_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+P_MUL_SYN.sdf, 190688
+module: QDFFRBN, "instance: TESTBED.I_P_MUL.i_reg_31_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+P_MUL_SYN.sdf, 190709
+module: QDFFRBN, "instance: TESTBED.I_P_MUL.i_reg_30_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+P_MUL_SYN.sdf, 190730
+module: QDFFRBN, "instance: TESTBED.I_P_MUL.out_reg_72_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+P_MUL_SYN.sdf, 190751
+module: QDFFRBN, "instance: TESTBED.I_P_MUL.out_reg_56_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+P_MUL_SYN.sdf, 190772
+module: QDFFRBN, "instance: TESTBED.I_P_MUL.out_reg_70_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+P_MUL_SYN.sdf, 190793
+module: QDFFRBN, "instance: TESTBED.I_P_MUL.i_reg_29_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+P_MUL_SYN.sdf, 190814
+module: QDFFRBN, "instance: TESTBED.I_P_MUL.out_reg_68_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+P_MUL_SYN.sdf, 190835
+module: QDFFRBN, "instance: TESTBED.I_P_MUL.out_reg_76_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+All future warnings not reported; use +sdfverbose to report them.
+
+Warning-[SDFCOM_CFTC] Cannot find timing check 
+P_MUL_SYN.sdf, 190856
+module: QDFFRBN, "instance: TESTBED.I_P_MUL.out_reg_55_"
+  SDF Warning: Cannot find timing check $hold(posedge CK,posedge RB,...)
+      
+
+
+          Total errors: 0
+          Total warnings: 130
+   ***    SDF annotation completed: Fri May 17 20:47:43 2024
+
+
+
+Warning-[DRTZ] Detect delay value roundoff to 0
+  Delay from design or SDF file roundoff to 0 based on timescale
+  Please use switch -diag timescale to dump detailed information.
+
+Starting vcs inline pass...
+
+Note-[VCS_PARAL] Parallel code-gen enabled
+  VCS is running with parallel code generation(-j)...
+
+118 modules and 2 UDPs read.
+recompiling module AOI12HS
+recompiling module AOI12HT
+recompiling module OAI12H
+recompiling module MOAI1HP
+recompiling module OAI12HP
+recompiling module MOAI1HT
+recompiling module OAI12HS
+recompiling module OAI12HT
+recompiling module PATTERN
+recompiling module MOAI1S
+recompiling module QDFFP
+recompiling module OAI22H
+recompiling module QDFFS
+recompiling module OAI22HP
+recompiling module OAI22HT
+recompiling module FA1
+recompiling module OAI22S
+recompiling module AN2B1
+recompiling module AN2B1S
+recompiling module FA1P
+recompiling module XOR3
+recompiling module MAO222
+recompiling module FA1S
+recompiling module MAO222P
+recompiling module AO22P
+recompiling module MAO222S
+recompiling module MAO222T
+recompiling module AO22T
+recompiling module AOI13H
+recompiling module OA22
+recompiling module AN3
+recompiling module AOI13HP
+recompiling module OA22P
+recompiling module ND3
+recompiling module AOI13HS
+recompiling module ND3HT
+recompiling module ND3P
+recompiling module MXL2HS
+recompiling module ND3S
+recompiling module AOI22H
+recompiling module NR3
+recompiling module OAI13H
+recompiling module NR3H
+recompiling module AOI22S
+recompiling module NR3HP
+recompiling module DFCRBN
+recompiling module MAOI1H
+recompiling module HA1
+recompiling module OR2B1S
+recompiling module HA1P
+recompiling module MAOI1HP
+recompiling module OAI112H
+recompiling module P_MUL
+recompiling module AN2
+recompiling module MAOI1HT
+recompiling module OAI112HP
+recompiling module AN2S
+recompiling module OAI112HS
+recompiling module MOAI1
+recompiling module AN2T
+recompiling module QDFFRBN
+recompiling module ND2
+recompiling module ND2F
+recompiling module MOAI1H
+recompiling module ND2P
+recompiling module TESTBED
+recompiling module QDFFRBP
+recompiling module BUF1
+recompiling module ND2S
+recompiling module BUF12CK
+recompiling module ND2T
+recompiling module BUF1CK
+recompiling module NR2
+recompiling module AO12
+recompiling module BUF1S
+recompiling module BUF2
+recompiling module AO12P
+recompiling module NR2F
+recompiling module BUF3
+recompiling module AO12S
+recompiling module NR2P
+recompiling module BUF4
+recompiling module BUF4CK
+recompiling module NR2T
+recompiling module AO12T
+recompiling module BUF6
+recompiling module OR2
+recompiling module BUF6CK
+recompiling module OA12
+recompiling module OR2P
+recompiling module BUF8CK
+recompiling module OA12P
+recompiling module INV1
+recompiling module XNR2H
+recompiling module INV12
+recompiling module OR2S
+recompiling module INV1CK
+recompiling module XNR2HP
+recompiling module INV1S
+recompiling module XNR2HS
+recompiling module INV2
+recompiling module XNR2HT
+recompiling module INV3
+recompiling module INV3CK
+recompiling module XOR2H
+recompiling module INV4
+recompiling module INV4CK
+recompiling module XOR2HP
+recompiling module INV6
+recompiling module XOR2HS
+recompiling module INV6CK
+recompiling module XOR2HT
+recompiling module INV8
+recompiling module INV8CK
+recompiling module AOI12H
+recompiling module AOI12HP
+recompiling module QDFFN
+recompiling module OR2T
+All of 118 modules done
+make[1]: Entering directory `/RAID2/COURSE/DCS/DCS111/Lab09/03_GATE/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _146225_archive_1.so _146962_archive_1.so _146963_archive_1.so _146964_archive_1.so objs/udps/qndjy.o objs/udps/Sbaqa.o  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/pli.a -ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/RAID2/COURSE/DCS/DCS111/Lab09/03_GATE/csrc'
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  May 17 20:47 2024
+Doing SDF annotation ...... Done
+*Verdi* Loading libsscore_vcs201906.so
+FSDB Dumper for VCS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+***********************************************************************
+*  ERROR -                                                            *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior, please contact Synopsys support for   *
+*  assistance.                                                        *
+***********************************************************************
+*Verdi* : Create FSDB file 'P_MUL_SYN.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+[1;32mPATTERN   0 PASS						[m
+[1;32mPATTERN   1 PASS						[m
+[1;32mPATTERN   2 PASS						[m
+[1;32mPATTERN   3 PASS						[m
+[1;32mPATTERN   4 PASS						[m
+[1;32mPATTERN   5 PASS						[m
+[1;32mPATTERN   6 PASS						[m
+[1;32mPATTERN   7 PASS						[m
+[1;32mPATTERN   8 PASS						[m
+[1;32mPATTERN   9 PASS						[m
+[1;32mPATTERN  10 PASS						[m
+[1;32mPATTERN  11 PASS						[m
+[1;32mPATTERN  12 PASS						[m
+[1;32mPATTERN  13 PASS						[m
+[1;32mPATTERN  14 PASS						[m
+[1;32mPATTERN  15 PASS						[m
+[1;32mPATTERN  16 PASS						[m
+[1;32mPATTERN  17 PASS						[m
+[1;32mPATTERN  18 PASS						[m
+[1;32mPATTERN  19 PASS						[m
+[1;32mPATTERN  20 PASS						[m
+[1;32mPATTERN  21 PASS						[m
+[1;32mPATTERN  22 PASS						[m
+[1;32mPATTERN  23 PASS						[m
+[1;32mPATTERN  24 PASS						[m
+[1;32mPATTERN  25 PASS						[m
+[1;32mPATTERN  26 PASS						[m
+[1;32mPATTERN  27 PASS						[m
+[1;32mPATTERN  28 PASS						[m
+[1;32mPATTERN  29 PASS						[m
+[1;32mPATTERN  30 PASS						[m
+[1;32mPATTERN  31 PASS						[m
+[1;32mPATTERN  32 PASS						[m
+[1;32mPATTERN  33 PASS						[m
+[1;32mPATTERN  34 PASS						[m
+[1;32mPATTERN  35 PASS						[m
+[1;32mPATTERN  36 PASS						[m
+[1;32mPATTERN  37 PASS						[m
+[1;32mPATTERN  38 PASS						[m
+[1;32mPATTERN  39 PASS						[m
+[1;32mPATTERN  40 PASS						[m
+[1;32mPATTERN  41 PASS						[m
+[1;32mPATTERN  42 PASS						[m
+[1;32mPATTERN  43 PASS						[m
+[1;32mPATTERN  44 PASS						[m
+[1;32mPATTERN  45 PASS						[m
+[1;32mPATTERN  46 PASS						[m
+[1;32mPATTERN  47 PASS						[m
+[1;32mPATTERN  48 PASS						[m
+[1;32mPATTERN  49 PASS						[m
+[1;32mPATTERN  50 PASS						[m
+[1;32mPATTERN  51 PASS						[m
+[1;32mPATTERN  52 PASS						[m
+[1;32mPATTERN  53 PASS						[m
+[1;32mPATTERN  54 PASS						[m
+[1;32mPATTERN  55 PASS						[m
+[1;32mPATTERN  56 PASS						[m
+[1;32mPATTERN  57 PASS						[m
+[1;32mPATTERN  58 PASS						[m
+[1;32mPATTERN  59 PASS						[m
+[1;32mPATTERN  60 PASS						[m
+[1;32mPATTERN  61 PASS						[m
+[1;32mPATTERN  62 PASS						[m
+[1;32mPATTERN  63 PASS						[m
+[1;32mPATTERN  64 PASS						[m
+[1;32mPATTERN  65 PASS						[m
+[1;32mPATTERN  66 PASS						[m
+[1;32mPATTERN  67 PASS						[m
+[1;32mPATTERN  68 PASS						[m
+[1;32mPATTERN  69 PASS						[m
+[1;32mPATTERN  70 PASS						[m
+[1;32mPATTERN  71 PASS						[m
+[1;32mPATTERN  72 PASS						[m
+[1;32mPATTERN  73 PASS						[m
+[1;32mPATTERN  74 PASS						[m
+[1;32mPATTERN  75 PASS						[m
+[1;32mPATTERN  76 PASS						[m
+[1;32mPATTERN  77 PASS						[m
+[1;32mPATTERN  78 PASS						[m
+[1;32mPATTERN  79 PASS						[m
+[1;32mPATTERN  80 PASS						[m
+[1;32mPATTERN  81 PASS						[m
+[1;32mPATTERN  82 PASS						[m
+[1;32mPATTERN  83 PASS						[m
+[1;32mPATTERN  84 PASS						[m
+[1;32mPATTERN  85 PASS						[m
+[1;32mPATTERN  86 PASS						[m
+[1;32mPATTERN  87 PASS						[m
+[1;32mPATTERN  88 PASS						[m
+[1;32mPATTERN  89 PASS						[m
+[1;32mPATTERN  90 PASS						[m
+[1;32mPATTERN  91 PASS						[m
+[1;32mPATTERN  92 PASS						[m
+[1;32mPATTERN  93 PASS						[m
+[1;32mPATTERN  94 PASS						[m
+[1;32mPATTERN  95 PASS						[m
+[1;32mPATTERN  96 PASS						[m
+[1;32mPATTERN  97 PASS						[m
+[1;32mPATTERN  98 PASS						[m
+[1;32mPATTERN  99 PASS						[m
+[1;32mPATTERN 100 PASS						[m
+[1;32mPATTERN 101 PASS						[m
+[1;32mPATTERN 102 PASS						[m
+[1;32mPATTERN 103 PASS						[m
+[1;32mPATTERN 104 PASS						[m
+[1;32mPATTERN 105 PASS						[m
+[1;32mPATTERN 106 PASS						[m
+[1;32mPATTERN 107 PASS						[m
+[1;32mPATTERN 108 PASS						[m
+[1;32mPATTERN 109 PASS						[m
+[1;32mPATTERN 110 PASS						[m
+[1;32mPATTERN 111 PASS						[m
+[1;32mPATTERN 112 PASS						[m
+[1;32mPATTERN 113 PASS						[m
+[1;32mPATTERN 114 PASS						[m
+[1;32mPATTERN 115 PASS						[m
+[1;32mPATTERN 116 PASS						[m
+[1;32mPATTERN 117 PASS						[m
+[1;32mPATTERN 118 PASS						[m
+[1;32mPATTERN 119 PASS						[m
+[1;32mPATTERN 120 PASS						[m
+[1;32mPATTERN 121 PASS						[m
+[1;32mPATTERN 122 PASS						[m
+[1;32mPATTERN 123 PASS						[m
+[1;32mPATTERN 124 PASS						[m
+[1;32mPATTERN 125 PASS						[m
+[1;32mPATTERN 126 PASS						[m
+[1;32mPATTERN 127 PASS						[m
+[1;32mPATTERN 128 PASS						[m
+[1;32mPATTERN 129 PASS						[m
+[1;32mPATTERN 130 PASS						[m
+[1;32mPATTERN 131 PASS						[m
+[1;32mPATTERN 132 PASS						[m
+[1;32mPATTERN 133 PASS						[m
+[1;32mPATTERN 134 PASS						[m
+[1;32mPATTERN 135 PASS						[m
+[1;32mPATTERN 136 PASS						[m
+[1;32mPATTERN 137 PASS						[m
+[1;32mPATTERN 138 PASS						[m
+[1;32mPATTERN 139 PASS						[m
+[1;32mPATTERN 140 PASS						[m
+[1;32mPATTERN 141 PASS						[m
+[1;32mPATTERN 142 PASS						[m
+[1;32mPATTERN 143 PASS						[m
+[1;32mPATTERN 144 PASS						[m
+[1;32mPATTERN 145 PASS						[m
+[1;32mPATTERN 146 PASS						[m
+[1;32mPATTERN 147 PASS						[m
+[1;32mPATTERN 148 PASS						[m
+[1;32mPATTERN 149 PASS						[m
+[1;32mPATTERN 150 PASS						[m
+[1;32mPATTERN 151 PASS						[m
+[1;32mPATTERN 152 PASS						[m
+[1;32mPATTERN 153 PASS						[m
+[1;32mPATTERN 154 PASS						[m
+[1;32mPATTERN 155 PASS						[m
+[1;32mPATTERN 156 PASS						[m
+[1;32mPATTERN 157 PASS						[m
+[1;32mPATTERN 158 PASS						[m
+[1;32mPATTERN 159 PASS						[m
+[1;32mPATTERN 160 PASS						[m
+[1;32mPATTERN 161 PASS						[m
+[1;32mPATTERN 162 PASS						[m
+[1;32mPATTERN 163 PASS						[m
+[1;32mPATTERN 164 PASS						[m
+[1;32mPATTERN 165 PASS						[m
+[1;32mPATTERN 166 PASS						[m
+[1;32mPATTERN 167 PASS						[m
+[1;32mPATTERN 168 PASS						[m
+[1;32mPATTERN 169 PASS						[m
+[1;32mPATTERN 170 PASS						[m
+[1;32mPATTERN 171 PASS						[m
+[1;32mPATTERN 172 PASS						[m
+[1;32mPATTERN 173 PASS						[m
+[1;32mPATTERN 174 PASS						[m
+[1;32mPATTERN 175 PASS						[m
+[1;32mPATTERN 176 PASS						[m
+[1;32mPATTERN 177 PASS						[m
+[1;32mPATTERN 178 PASS						[m
+[1;32mPATTERN 179 PASS						[m
+[1;32mPATTERN 180 PASS						[m
+[1;32mPATTERN 181 PASS						[m
+[1;32mPATTERN 182 PASS						[m
+[1;32mPATTERN 183 PASS						[m
+[1;32mPATTERN 184 PASS						[m
+[1;32mPATTERN 185 PASS						[m
+[1;32mPATTERN 186 PASS						[m
+[1;32mPATTERN 187 PASS						[m
+[1;32mPATTERN 188 PASS						[m
+[1;32mPATTERN 189 PASS						[m
+[1;32mPATTERN 190 PASS						[m
+[1;32mPATTERN 191 PASS						[m
+[1;32mPATTERN 192 PASS						[m
+[1;32mPATTERN 193 PASS						[m
+[1;32mPATTERN 194 PASS						[m
+[1;32mPATTERN 195 PASS						[m
+[1;32mPATTERN 196 PASS						[m
+[1;32mPATTERN 197 PASS						[m
+[1;32mPATTERN 198 PASS						[m
+[1;32mPATTERN 199 PASS						[m
+[1;32mPATTERN 200 PASS						[m
+[1;32mPATTERN 201 PASS						[m
+[1;32mPATTERN 202 PASS						[m
+[1;32mPATTERN 203 PASS						[m
+[1;32mPATTERN 204 PASS						[m
+[1;32mPATTERN 205 PASS						[m
+[1;32mPATTERN 206 PASS						[m
+[1;32mPATTERN 207 PASS						[m
+[1;32mPATTERN 208 PASS						[m
+[1;32mPATTERN 209 PASS						[m
+[1;32mPATTERN 210 PASS						[m
+[1;32mPATTERN 211 PASS						[m
+[1;32mPATTERN 212 PASS						[m
+[1;32mPATTERN 213 PASS						[m
+[1;32mPATTERN 214 PASS						[m
+[1;32mPATTERN 215 PASS						[m
+[1;32mPATTERN 216 PASS						[m
+[1;32mPATTERN 217 PASS						[m
+[1;32mPATTERN 218 PASS						[m
+[1;32mPATTERN 219 PASS						[m
+[1;32mPATTERN 220 PASS						[m
+[1;32mPATTERN 221 PASS						[m
+[1;32mPATTERN 222 PASS						[m
+[1;32mPATTERN 223 PASS						[m
+[1;32mPATTERN 224 PASS						[m
+[1;32mPATTERN 225 PASS						[m
+[1;32mPATTERN 226 PASS						[m
+[1;32mPATTERN 227 PASS						[m
+[1;32mPATTERN 228 PASS						[m
+[1;32mPATTERN 229 PASS						[m
+[1;32mPATTERN 230 PASS						[m
+[1;32mPATTERN 231 PASS						[m
+[1;32mPATTERN 232 PASS						[m
+[1;32mPATTERN 233 PASS						[m
+[1;32mPATTERN 234 PASS						[m
+[1;32mPATTERN 235 PASS						[m
+[1;32mPATTERN 236 PASS						[m
+[1;32mPATTERN 237 PASS						[m
+[1;32mPATTERN 238 PASS						[m
+[1;32mPATTERN 239 PASS						[m
+[1;32mPATTERN 240 PASS						[m
+[1;32mPATTERN 241 PASS						[m
+[1;32mPATTERN 242 PASS						[m
+[1;32mPATTERN 243 PASS						[m
+[1;32mPATTERN 244 PASS						[m
+[1;32mPATTERN 245 PASS						[m
+[1;32mPATTERN 246 PASS						[m
+[1;32mPATTERN 247 PASS						[m
+[1;32mPATTERN 248 PASS						[m
+[1;32mPATTERN 249 PASS						[m
+[1;32mPATTERN 250 PASS						[m
+[1;32mPATTERN 251 PASS						[m
+[1;32mPATTERN 252 PASS						[m
+[1;32mPATTERN 253 PASS						[m
+[1;32mPATTERN 254 PASS						[m
+[1;32mPATTERN 255 PASS						[m
+[1;32mPATTERN 256 PASS						[m
+[1;32mPATTERN 257 PASS						[m
+[1;32mPATTERN 258 PASS						[m
+[1;32mPATTERN 259 PASS						[m
+[1;32mPATTERN 260 PASS						[m
+[1;32mPATTERN 261 PASS						[m
+[1;32mPATTERN 262 PASS						[m
+[1;32mPATTERN 263 PASS						[m
+[1;32mPATTERN 264 PASS						[m
+[1;32mPATTERN 265 PASS						[m
+[1;32mPATTERN 266 PASS						[m
+[1;32mPATTERN 267 PASS						[m
+[1;32mPATTERN 268 PASS						[m
+[1;32mPATTERN 269 PASS						[m
+[1;32mPATTERN 270 PASS						[m
+[1;32mPATTERN 271 PASS						[m
+[1;32mPATTERN 272 PASS						[m
+[1;32mPATTERN 273 PASS						[m
+[1;32mPATTERN 274 PASS						[m
+[1;32mPATTERN 275 PASS						[m
+[1;32mPATTERN 276 PASS						[m
+[1;32mPATTERN 277 PASS						[m
+[1;32mPATTERN 278 PASS						[m
+[1;32mPATTERN 279 PASS						[m
+[1;32mPATTERN 280 PASS						[m
+[1;32mPATTERN 281 PASS						[m
+[1;32mPATTERN 282 PASS						[m
+[1;32mPATTERN 283 PASS						[m
+[1;32mPATTERN 284 PASS						[m
+[1;32mPATTERN 285 PASS						[m
+[1;32mPATTERN 286 PASS						[m
+[1;32mPATTERN 287 PASS						[m
+[1;32mPATTERN 288 PASS						[m
+[1;32mPATTERN 289 PASS						[m
+[1;32mPATTERN 290 PASS						[m
+[1;32mPATTERN 291 PASS						[m
+[1;32mPATTERN 292 PASS						[m
+[1;32mPATTERN 293 PASS						[m
+[1;32mPATTERN 294 PASS						[m
+[1;32mPATTERN 295 PASS						[m
+[1;32mPATTERN 296 PASS						[m
+[1;32mPATTERN 297 PASS						[m
+[1;32mPATTERN 298 PASS						[m
+[1;32mPATTERN 299 PASS						[m
+[1;32mPATTERN 300 PASS						[m
+[1;32mPATTERN 301 PASS						[m
+[1;32mPATTERN 302 PASS						[m
+[1;32mPATTERN 303 PASS						[m
+[1;32mPATTERN 304 PASS						[m
+[1;32mPATTERN 305 PASS						[m
+[1;32mPATTERN 306 PASS						[m
+[1;32mPATTERN 307 PASS						[m
+[1;32mPATTERN 308 PASS						[m
+[1;32mPATTERN 309 PASS						[m
+[1;32mPATTERN 310 PASS						[m
+[1;32mPATTERN 311 PASS						[m
+[1;32mPATTERN 312 PASS						[m
+[1;32mPATTERN 313 PASS						[m
+[1;32mPATTERN 314 PASS						[m
+[1;32mPATTERN 315 PASS						[m
+[1;32mPATTERN 316 PASS						[m
+[1;32mPATTERN 317 PASS						[m
+[1;32mPATTERN 318 PASS						[m
+[1;32mPATTERN 319 PASS						[m
+[1;32mPATTERN 320 PASS						[m
+[1;32mPATTERN 321 PASS						[m
+[1;32mPATTERN 322 PASS						[m
+[1;32mPATTERN 323 PASS						[m
+[1;32mPATTERN 324 PASS						[m
+[1;32mPATTERN 325 PASS						[m
+[1;32mPATTERN 326 PASS						[m
+[1;32mPATTERN 327 PASS						[m
+[1;32mPATTERN 328 PASS						[m
+[1;32mPATTERN 329 PASS						[m
+[1;32mPATTERN 330 PASS						[m
+[1;32mPATTERN 331 PASS						[m
+[1;32mPATTERN 332 PASS						[m
+[1;32mPATTERN 333 PASS						[m
+[1;32mPATTERN 334 PASS						[m
+[1;32mPATTERN 335 PASS						[m
+[1;32mPATTERN 336 PASS						[m
+[1;32mPATTERN 337 PASS						[m
+[1;32mPATTERN 338 PASS						[m
+[1;32mPATTERN 339 PASS						[m
+[1;32mPATTERN 340 PASS						[m
+[1;32mPATTERN 341 PASS						[m
+[1;32mPATTERN 342 PASS						[m
+[1;32mPATTERN 343 PASS						[m
+[1;32mPATTERN 344 PASS						[m
+[1;32mPATTERN 345 PASS						[m
+[1;32mPATTERN 346 PASS						[m
+[1;32mPATTERN 347 PASS						[m
+[1;32mPATTERN 348 PASS						[m
+[1;32mPATTERN 349 PASS						[m
+[1;32mPATTERN 350 PASS						[m
+[1;32mPATTERN 351 PASS						[m
+[1;32mPATTERN 352 PASS						[m
+[1;32mPATTERN 353 PASS						[m
+[1;32mPATTERN 354 PASS						[m
+[1;32mPATTERN 355 PASS						[m
+[1;32mPATTERN 356 PASS						[m
+[1;32mPATTERN 357 PASS						[m
+[1;32mPATTERN 358 PASS						[m
+[1;32mPATTERN 359 PASS						[m
+[1;32mPATTERN 360 PASS						[m
+[1;32mPATTERN 361 PASS						[m
+[1;32mPATTERN 362 PASS						[m
+[1;32mPATTERN 363 PASS						[m
+[1;32mPATTERN 364 PASS						[m
+[1;32mPATTERN 365 PASS						[m
+[1;32mPATTERN 366 PASS						[m
+[1;32mPATTERN 367 PASS						[m
+[1;32mPATTERN 368 PASS						[m
+[1;32mPATTERN 369 PASS						[m
+[1;32mPATTERN 370 PASS						[m
+[1;32mPATTERN 371 PASS						[m
+[1;32mPATTERN 372 PASS						[m
+[1;32mPATTERN 373 PASS						[m
+[1;32mPATTERN 374 PASS						[m
+[1;32mPATTERN 375 PASS						[m
+[1;32mPATTERN 376 PASS						[m
+[1;32mPATTERN 377 PASS						[m
+[1;32mPATTERN 378 PASS						[m
+[1;32mPATTERN 379 PASS						[m
+[1;32mPATTERN 380 PASS						[m
+[1;32mPATTERN 381 PASS						[m
+[1;32mPATTERN 382 PASS						[m
+[1;32mPATTERN 383 PASS						[m
+[1;32mPATTERN 384 PASS						[m
+[1;32mPATTERN 385 PASS						[m
+[1;32mPATTERN 386 PASS						[m
+[1;32mPATTERN 387 PASS						[m
+[1;32mPATTERN 388 PASS						[m
+[1;32mPATTERN 389 PASS						[m
+[1;32mPATTERN 390 PASS						[m
+[1;32mPATTERN 391 PASS						[m
+[1;32mPATTERN 392 PASS						[m
+[1;32mPATTERN 393 PASS						[m
+[1;32mPATTERN 394 PASS						[m
+[1;32mPATTERN 395 PASS						[m
+[1;32mPATTERN 396 PASS						[m
+[1;32mPATTERN 397 PASS						[m
+[1;32mPATTERN 398 PASS						[m
+[1;32mPATTERN 399 PASS						[m
+[1;32mPATTERN 400 PASS						[m
+[1;32mPATTERN 401 PASS						[m
+[1;32mPATTERN 402 PASS						[m
+[1;32mPATTERN 403 PASS						[m
+[1;32mPATTERN 404 PASS						[m
+[1;32mPATTERN 405 PASS						[m
+[1;32mPATTERN 406 PASS						[m
+[1;32mPATTERN 407 PASS						[m
+[1;32mPATTERN 408 PASS						[m
+[1;32mPATTERN 409 PASS						[m
+[1;32mPATTERN 410 PASS						[m
+[1;32mPATTERN 411 PASS						[m
+[1;32mPATTERN 412 PASS						[m
+[1;32mPATTERN 413 PASS						[m
+[1;32mPATTERN 414 PASS						[m
+[1;32mPATTERN 415 PASS						[m
+[1;32mPATTERN 416 PASS						[m
+[1;32mPATTERN 417 PASS						[m
+[1;32mPATTERN 418 PASS						[m
+[1;32mPATTERN 419 PASS						[m
+[1;32mPATTERN 420 PASS						[m
+[1;32mPATTERN 421 PASS						[m
+[1;32mPATTERN 422 PASS						[m
+[1;32mPATTERN 423 PASS						[m
+[1;32mPATTERN 424 PASS						[m
+[1;32mPATTERN 425 PASS						[m
+[1;32mPATTERN 426 PASS						[m
+[1;32mPATTERN 427 PASS						[m
+[1;32mPATTERN 428 PASS						[m
+[1;32mPATTERN 429 PASS						[m
+[1;32mPATTERN 430 PASS						[m
+[1;32mPATTERN 431 PASS						[m
+[1;32mPATTERN 432 PASS						[m
+[1;32mPATTERN 433 PASS						[m
+[1;32mPATTERN 434 PASS						[m
+[1;32mPATTERN 435 PASS						[m
+[1;32mPATTERN 436 PASS						[m
+[1;32mPATTERN 437 PASS						[m
+[1;32mPATTERN 438 PASS						[m
+[1;32mPATTERN 439 PASS						[m
+[1;32mPATTERN 440 PASS						[m
+[1;32mPATTERN 441 PASS						[m
+[1;32mPATTERN 442 PASS						[m
+[1;32mPATTERN 443 PASS						[m
+[1;32mPATTERN 444 PASS						[m
+[1;32mPATTERN 445 PASS						[m
+[1;32mPATTERN 446 PASS						[m
+[1;32mPATTERN 447 PASS						[m
+[1;32mPATTERN 448 PASS						[m
+[1;32mPATTERN 449 PASS						[m
+[1;32mPATTERN 450 PASS						[m
+[1;32mPATTERN 451 PASS						[m
+[1;32mPATTERN 452 PASS						[m
+[1;32mPATTERN 453 PASS						[m
+[1;32mPATTERN 454 PASS						[m
+[1;32mPATTERN 455 PASS						[m
+[1;32mPATTERN 456 PASS						[m
+[1;32mPATTERN 457 PASS						[m
+[1;32mPATTERN 458 PASS						[m
+[1;32mPATTERN 459 PASS						[m
+[1;32mPATTERN 460 PASS						[m
+[1;32mPATTERN 461 PASS						[m
+[1;32mPATTERN 462 PASS						[m
+[1;32mPATTERN 463 PASS						[m
+[1;32mPATTERN 464 PASS						[m
+[1;32mPATTERN 465 PASS						[m
+[1;32mPATTERN 466 PASS						[m
+[1;32mPATTERN 467 PASS						[m
+[1;32mPATTERN 468 PASS						[m
+[1;32mPATTERN 469 PASS						[m
+[1;32mPATTERN 470 PASS						[m
+[1;32mPATTERN 471 PASS						[m
+[1;32mPATTERN 472 PASS						[m
+[1;32mPATTERN 473 PASS						[m
+[1;32mPATTERN 474 PASS						[m
+[1;32mPATTERN 475 PASS						[m
+[1;32mPATTERN 476 PASS						[m
+[1;32mPATTERN 477 PASS						[m
+[1;32mPATTERN 478 PASS						[m
+[1;32mPATTERN 479 PASS						[m
+[1;32mPATTERN 480 PASS						[m
+[1;32mPATTERN 481 PASS						[m
+[1;32mPATTERN 482 PASS						[m
+[1;32mPATTERN 483 PASS						[m
+[1;32mPATTERN 484 PASS						[m
+[1;32mPATTERN 485 PASS						[m
+[1;32mPATTERN 486 PASS						[m
+[1;32mPATTERN 487 PASS						[m
+[1;32mPATTERN 488 PASS						[m
+[1;32mPATTERN 489 PASS						[m
+[1;32mPATTERN 490 PASS						[m
+[1;32mPATTERN 491 PASS						[m
+[1;32mPATTERN 492 PASS						[m
+[1;32mPATTERN 493 PASS						[m
+[1;32mPATTERN 494 PASS						[m
+[1;32mPATTERN 495 PASS						[m
+[1;32mPATTERN 496 PASS						[m
+[1;32mPATTERN 497 PASS						[m
+[1;32mPATTERN 498 PASS						[m
+[1;32mPATTERN 499 PASS						[m
+[1;32mPATTERN 500 PASS						[m
+[1;32mPATTERN 501 PASS						[m
+[1;32mPATTERN 502 PASS						[m
+[1;32mPATTERN 503 PASS						[m
+[1;32mPATTERN 504 PASS						[m
+[1;32mPATTERN 505 PASS						[m
+[1;32mPATTERN 506 PASS						[m
+[1;32mPATTERN 507 PASS						[m
+[1;32mPATTERN 508 PASS						[m
+[1;32mPATTERN 509 PASS						[m
+[1;32mPATTERN 510 PASS						[m
+[1;32mPATTERN 511 PASS						[m
+[1;32mPATTERN 512 PASS						[m
+[1;32mPATTERN 513 PASS						[m
+[1;32mPATTERN 514 PASS						[m
+[1;32mPATTERN 515 PASS						[m
+[1;32mPATTERN 516 PASS						[m
+[1;32mPATTERN 517 PASS						[m
+[1;32mPATTERN 518 PASS						[m
+[1;32mPATTERN 519 PASS						[m
+[1;32mPATTERN 520 PASS						[m
+[1;32mPATTERN 521 PASS						[m
+[1;32mPATTERN 522 PASS						[m
+[1;32mPATTERN 523 PASS						[m
+[1;32mPATTERN 524 PASS						[m
+[1;32mPATTERN 525 PASS						[m
+[1;32mPATTERN 526 PASS						[m
+[1;32mPATTERN 527 PASS						[m
+[1;32mPATTERN 528 PASS						[m
+[1;32mPATTERN 529 PASS						[m
+[1;32mPATTERN 530 PASS						[m
+[1;32mPATTERN 531 PASS						[m
+[1;32mPATTERN 532 PASS						[m
+[1;32mPATTERN 533 PASS						[m
+[1;32mPATTERN 534 PASS						[m
+[1;32mPATTERN 535 PASS						[m
+[1;32mPATTERN 536 PASS						[m
+[1;32mPATTERN 537 PASS						[m
+[1;32mPATTERN 538 PASS						[m
+[1;32mPATTERN 539 PASS						[m
+[1;32mPATTERN 540 PASS						[m
+[1;32mPATTERN 541 PASS						[m
+[1;32mPATTERN 542 PASS						[m
+[1;32mPATTERN 543 PASS						[m
+[1;32mPATTERN 544 PASS						[m
+[1;32mPATTERN 545 PASS						[m
+[1;32mPATTERN 546 PASS						[m
+[1;32mPATTERN 547 PASS						[m
+[1;32mPATTERN 548 PASS						[m
+[1;32mPATTERN 549 PASS						[m
+[1;32mPATTERN 550 PASS						[m
+[1;32mPATTERN 551 PASS						[m
+[1;32mPATTERN 552 PASS						[m
+[1;32mPATTERN 553 PASS						[m
+[1;32mPATTERN 554 PASS						[m
+[1;32mPATTERN 555 PASS						[m
+[1;32mPATTERN 556 PASS						[m
+[1;32mPATTERN 557 PASS						[m
+[1;32mPATTERN 558 PASS						[m
+[1;32mPATTERN 559 PASS						[m
+[1;32mPATTERN 560 PASS						[m
+[1;32mPATTERN 561 PASS						[m
+[1;32mPATTERN 562 PASS						[m
+[1;32mPATTERN 563 PASS						[m
+[1;32mPATTERN 564 PASS						[m
+[1;32mPATTERN 565 PASS						[m
+[1;32mPATTERN 566 PASS						[m
+[1;32mPATTERN 567 PASS						[m
+[1;32mPATTERN 568 PASS						[m
+[1;32mPATTERN 569 PASS						[m
+[1;32mPATTERN 570 PASS						[m
+[1;32mPATTERN 571 PASS						[m
+[1;32mPATTERN 572 PASS						[m
+[1;32mPATTERN 573 PASS						[m
+[1;32mPATTERN 574 PASS						[m
+[1;32mPATTERN 575 PASS						[m
+[1;32mPATTERN 576 PASS						[m
+[1;32mPATTERN 577 PASS						[m
+[1;32mPATTERN 578 PASS						[m
+[1;32mPATTERN 579 PASS						[m
+[1;32mPATTERN 580 PASS						[m
+[1;32mPATTERN 581 PASS						[m
+[1;32mPATTERN 582 PASS						[m
+[1;32mPATTERN 583 PASS						[m
+[1;32mPATTERN 584 PASS						[m
+[1;32mPATTERN 585 PASS						[m
+[1;32mPATTERN 586 PASS						[m
+[1;32mPATTERN 587 PASS						[m
+[1;32mPATTERN 588 PASS						[m
+[1;32mPATTERN 589 PASS						[m
+[1;32mPATTERN 590 PASS						[m
+[1;32mPATTERN 591 PASS						[m
+[1;32mPATTERN 592 PASS						[m
+[1;32mPATTERN 593 PASS						[m
+[1;32mPATTERN 594 PASS						[m
+[1;32mPATTERN 595 PASS						[m
+[1;32mPATTERN 596 PASS						[m
+[1;32mPATTERN 597 PASS						[m
+[1;32mPATTERN 598 PASS						[m
+[1;32mPATTERN 599 PASS						[m
+[1;32mPATTERN 600 PASS						[m
+[1;32mPATTERN 601 PASS						[m
+[1;32mPATTERN 602 PASS						[m
+[1;32mPATTERN 603 PASS						[m
+[1;32mPATTERN 604 PASS						[m
+[1;32mPATTERN 605 PASS						[m
+[1;32mPATTERN 606 PASS						[m
+[1;32mPATTERN 607 PASS						[m
+[1;32mPATTERN 608 PASS						[m
+[1;32mPATTERN 609 PASS						[m
+[1;32mPATTERN 610 PASS						[m
+[1;32mPATTERN 611 PASS						[m
+[1;32mPATTERN 612 PASS						[m
+[1;32mPATTERN 613 PASS						[m
+[1;32mPATTERN 614 PASS						[m
+[1;32mPATTERN 615 PASS						[m
+[1;32mPATTERN 616 PASS						[m
+[1;32mPATTERN 617 PASS						[m
+[1;32mPATTERN 618 PASS						[m
+[1;32mPATTERN 619 PASS						[m
+[1;32mPATTERN 620 PASS						[m
+[1;32mPATTERN 621 PASS						[m
+[1;32mPATTERN 622 PASS						[m
+[1;32mPATTERN 623 PASS						[m
+[1;32mPATTERN 624 PASS						[m
+[1;32mPATTERN 625 PASS						[m
+[1;32mPATTERN 626 PASS						[m
+[1;32mPATTERN 627 PASS						[m
+[1;32mPATTERN 628 PASS						[m
+[1;32mPATTERN 629 PASS						[m
+[1;32mPATTERN 630 PASS						[m
+[1;32mPATTERN 631 PASS						[m
+[1;32mPATTERN 632 PASS						[m
+[1;32mPATTERN 633 PASS						[m
+[1;32mPATTERN 634 PASS						[m
+[1;32mPATTERN 635 PASS						[m
+[1;32mPATTERN 636 PASS						[m
+[1;32mPATTERN 637 PASS						[m
+[1;32mPATTERN 638 PASS						[m
+[1;32mPATTERN 639 PASS						[m
+[1;32mPATTERN 640 PASS						[m
+[1;32mPATTERN 641 PASS						[m
+[1;32mPATTERN 642 PASS						[m
+[1;32mPATTERN 643 PASS						[m
+[1;32mPATTERN 644 PASS						[m
+[1;32mPATTERN 645 PASS						[m
+[1;32mPATTERN 646 PASS						[m
+[1;32mPATTERN 647 PASS						[m
+[1;32mPATTERN 648 PASS						[m
+[1;32mPATTERN 649 PASS						[m
+[1;32mPATTERN 650 PASS						[m
+[1;32mPATTERN 651 PASS						[m
+[1;32mPATTERN 652 PASS						[m
+[1;32mPATTERN 653 PASS						[m
+[1;32mPATTERN 654 PASS						[m
+[1;32mPATTERN 655 PASS						[m
+[1;32mPATTERN 656 PASS						[m
+[1;32mPATTERN 657 PASS						[m
+[1;32mPATTERN 658 PASS						[m
+[1;32mPATTERN 659 PASS						[m
+[1;32mPATTERN 660 PASS						[m
+[1;32mPATTERN 661 PASS						[m
+[1;32mPATTERN 662 PASS						[m
+[1;32mPATTERN 663 PASS						[m
+[1;32mPATTERN 664 PASS						[m
+[1;32mPATTERN 665 PASS						[m
+[1;32mPATTERN 666 PASS						[m
+[1;32mPATTERN 667 PASS						[m
+[1;32mPATTERN 668 PASS						[m
+[1;32mPATTERN 669 PASS						[m
+[1;32mPATTERN 670 PASS						[m
+[1;32mPATTERN 671 PASS						[m
+[1;32mPATTERN 672 PASS						[m
+[1;32mPATTERN 673 PASS						[m
+[1;32mPATTERN 674 PASS						[m
+[1;32mPATTERN 675 PASS						[m
+[1;32mPATTERN 676 PASS						[m
+[1;32mPATTERN 677 PASS						[m
+[1;32mPATTERN 678 PASS						[m
+[1;32mPATTERN 679 PASS						[m
+[1;32mPATTERN 680 PASS						[m
+[1;32mPATTERN 681 PASS						[m
+[1;32mPATTERN 682 PASS						[m
+[1;32mPATTERN 683 PASS						[m
+[1;32mPATTERN 684 PASS						[m
+[1;32mPATTERN 685 PASS						[m
+[1;32mPATTERN 686 PASS						[m
+[1;32mPATTERN 687 PASS						[m
+[1;32mPATTERN 688 PASS						[m
+[1;32mPATTERN 689 PASS						[m
+[1;32mPATTERN 690 PASS						[m
+[1;32mPATTERN 691 PASS						[m
+[1;32mPATTERN 692 PASS						[m
+[1;32mPATTERN 693 PASS						[m
+[1;32mPATTERN 694 PASS						[m
+[1;32mPATTERN 695 PASS						[m
+[1;32mPATTERN 696 PASS						[m
+[1;32mPATTERN 697 PASS						[m
+[1;32mPATTERN 698 PASS						[m
+[1;32mPATTERN 699 PASS						[m
+[1;32mPATTERN 700 PASS						[m
+[1;32mPATTERN 701 PASS						[m
+[1;32mPATTERN 702 PASS						[m
+[1;32mPATTERN 703 PASS						[m
+[1;32mPATTERN 704 PASS						[m
+[1;32mPATTERN 705 PASS						[m
+[1;32mPATTERN 706 PASS						[m
+[1;32mPATTERN 707 PASS						[m
+[1;32mPATTERN 708 PASS						[m
+[1;32mPATTERN 709 PASS						[m
+[1;32mPATTERN 710 PASS						[m
+[1;32mPATTERN 711 PASS						[m
+[1;32mPATTERN 712 PASS						[m
+[1;32mPATTERN 713 PASS						[m
+[1;32mPATTERN 714 PASS						[m
+[1;32mPATTERN 715 PASS						[m
+[1;32mPATTERN 716 PASS						[m
+[1;32mPATTERN 717 PASS						[m
+[1;32mPATTERN 718 PASS						[m
+[1;32mPATTERN 719 PASS						[m
+[1;32mPATTERN 720 PASS						[m
+[1;32mPATTERN 721 PASS						[m
+[1;32mPATTERN 722 PASS						[m
+[1;32mPATTERN 723 PASS						[m
+[1;32mPATTERN 724 PASS						[m
+[1;32mPATTERN 725 PASS						[m
+[1;32mPATTERN 726 PASS						[m
+[1;32mPATTERN 727 PASS						[m
+[1;32mPATTERN 728 PASS						[m
+[1;32mPATTERN 729 PASS						[m
+[1;32mPATTERN 730 PASS						[m
+[1;32mPATTERN 731 PASS						[m
+[1;32mPATTERN 732 PASS						[m
+[1;32mPATTERN 733 PASS						[m
+[1;32mPATTERN 734 PASS						[m
+[1;32mPATTERN 735 PASS						[m
+[1;32mPATTERN 736 PASS						[m
+[1;32mPATTERN 737 PASS						[m
+[1;32mPATTERN 738 PASS						[m
+[1;32mPATTERN 739 PASS						[m
+[1;32mPATTERN 740 PASS						[m
+[1;32mPATTERN 741 PASS						[m
+[1;32mPATTERN 742 PASS						[m
+[1;32mPATTERN 743 PASS						[m
+[1;32mPATTERN 744 PASS						[m
+[1;32mPATTERN 745 PASS						[m
+[1;32mPATTERN 746 PASS						[m
+[1;32mPATTERN 747 PASS						[m
+[1;32mPATTERN 748 PASS						[m
+[1;32mPATTERN 749 PASS						[m
+[1;32mPATTERN 750 PASS						[m
+[1;32mPATTERN 751 PASS						[m
+[1;32mPATTERN 752 PASS						[m
+[1;32mPATTERN 753 PASS						[m
+[1;32mPATTERN 754 PASS						[m
+[1;32mPATTERN 755 PASS						[m
+[1;32mPATTERN 756 PASS						[m
+[1;32mPATTERN 757 PASS						[m
+[1;32mPATTERN 758 PASS						[m
+[1;32mPATTERN 759 PASS						[m
+[1;32mPATTERN 760 PASS						[m
+[1;32mPATTERN 761 PASS						[m
+[1;32mPATTERN 762 PASS						[m
+[1;32mPATTERN 763 PASS						[m
+[1;32mPATTERN 764 PASS						[m
+[1;32mPATTERN 765 PASS						[m
+[1;32mPATTERN 766 PASS						[m
+[1;32mPATTERN 767 PASS						[m
+[1;32mPATTERN 768 PASS						[m
+[1;32mPATTERN 769 PASS						[m
+[1;32mPATTERN 770 PASS						[m
+[1;32mPATTERN 771 PASS						[m
+[1;32mPATTERN 772 PASS						[m
+[1;32mPATTERN 773 PASS						[m
+[1;32mPATTERN 774 PASS						[m
+[1;32mPATTERN 775 PASS						[m
+[1;32mPATTERN 776 PASS						[m
+[1;32mPATTERN 777 PASS						[m
+[1;32mPATTERN 778 PASS						[m
+[1;32mPATTERN 779 PASS						[m
+[1;32mPATTERN 780 PASS						[m
+[1;32mPATTERN 781 PASS						[m
+[1;32mPATTERN 782 PASS						[m
+[1;32mPATTERN 783 PASS						[m
+[1;32mPATTERN 784 PASS						[m
+[1;32mPATTERN 785 PASS						[m
+[1;32mPATTERN 786 PASS						[m
+[1;32mPATTERN 787 PASS						[m
+[1;32mPATTERN 788 PASS						[m
+[1;32mPATTERN 789 PASS						[m
+[1;32mPATTERN 790 PASS						[m
+[1;32mPATTERN 791 PASS						[m
+[1;32mPATTERN 792 PASS						[m
+[1;32mPATTERN 793 PASS						[m
+[1;32mPATTERN 794 PASS						[m
+[1;32mPATTERN 795 PASS						[m
+[1;32mPATTERN 796 PASS						[m
+[1;32mPATTERN 797 PASS						[m
+[1;32mPATTERN 798 PASS						[m
+[1;32mPATTERN 799 PASS						[m
+[1;32mPATTERN 800 PASS						[m
+[1;32mPATTERN 801 PASS						[m
+[1;32mPATTERN 802 PASS						[m
+[1;32mPATTERN 803 PASS						[m
+[1;32mPATTERN 804 PASS						[m
+[1;32mPATTERN 805 PASS						[m
+[1;32mPATTERN 806 PASS						[m
+[1;32mPATTERN 807 PASS						[m
+[1;32mPATTERN 808 PASS						[m
+[1;32mPATTERN 809 PASS						[m
+[1;32mPATTERN 810 PASS						[m
+[1;32mPATTERN 811 PASS						[m
+[1;32mPATTERN 812 PASS						[m
+[1;32mPATTERN 813 PASS						[m
+[1;32mPATTERN 814 PASS						[m
+[1;32mPATTERN 815 PASS						[m
+[1;32mPATTERN 816 PASS						[m
+[1;32mPATTERN 817 PASS						[m
+[1;32mPATTERN 818 PASS						[m
+[1;32mPATTERN 819 PASS						[m
+[1;32mPATTERN 820 PASS						[m
+[1;32mPATTERN 821 PASS						[m
+[1;32mPATTERN 822 PASS						[m
+[1;32mPATTERN 823 PASS						[m
+[1;32mPATTERN 824 PASS						[m
+[1;32mPATTERN 825 PASS						[m
+[1;32mPATTERN 826 PASS						[m
+[1;32mPATTERN 827 PASS						[m
+[1;32mPATTERN 828 PASS						[m
+[1;32mPATTERN 829 PASS						[m
+[1;32mPATTERN 830 PASS						[m
+[1;32mPATTERN 831 PASS						[m
+[1;32mPATTERN 832 PASS						[m
+[1;32mPATTERN 833 PASS						[m
+[1;32mPATTERN 834 PASS						[m
+[1;32mPATTERN 835 PASS						[m
+[1;32mPATTERN 836 PASS						[m
+[1;32mPATTERN 837 PASS						[m
+[1;32mPATTERN 838 PASS						[m
+[1;32mPATTERN 839 PASS						[m
+[1;32mPATTERN 840 PASS						[m
+[1;32mPATTERN 841 PASS						[m
+[1;32mPATTERN 842 PASS						[m
+[1;32mPATTERN 843 PASS						[m
+[1;32mPATTERN 844 PASS						[m
+[1;32mPATTERN 845 PASS						[m
+[1;32mPATTERN 846 PASS						[m
+[1;32mPATTERN 847 PASS						[m
+[1;32mPATTERN 848 PASS						[m
+[1;32mPATTERN 849 PASS						[m
+[1;32mPATTERN 850 PASS						[m
+[1;32mPATTERN 851 PASS						[m
+[1;32mPATTERN 852 PASS						[m
+[1;32mPATTERN 853 PASS						[m
+[1;32mPATTERN 854 PASS						[m
+[1;32mPATTERN 855 PASS						[m
+[1;32mPATTERN 856 PASS						[m
+[1;32mPATTERN 857 PASS						[m
+[1;32mPATTERN 858 PASS						[m
+[1;32mPATTERN 859 PASS						[m
+[1;32mPATTERN 860 PASS						[m
+[1;32mPATTERN 861 PASS						[m
+[1;32mPATTERN 862 PASS						[m
+[1;32mPATTERN 863 PASS						[m
+[1;32mPATTERN 864 PASS						[m
+[1;32mPATTERN 865 PASS						[m
+[1;32mPATTERN 866 PASS						[m
+[1;32mPATTERN 867 PASS						[m
+[1;32mPATTERN 868 PASS						[m
+[1;32mPATTERN 869 PASS						[m
+[1;32mPATTERN 870 PASS						[m
+[1;32mPATTERN 871 PASS						[m
+[1;32mPATTERN 872 PASS						[m
+[1;32mPATTERN 873 PASS						[m
+[1;32mPATTERN 874 PASS						[m
+[1;32mPATTERN 875 PASS						[m
+[1;32mPATTERN 876 PASS						[m
+[1;32mPATTERN 877 PASS						[m
+[1;32mPATTERN 878 PASS						[m
+[1;32mPATTERN 879 PASS						[m
+[1;32mPATTERN 880 PASS						[m
+[1;32mPATTERN 881 PASS						[m
+[1;32mPATTERN 882 PASS						[m
+[1;32mPATTERN 883 PASS						[m
+[1;32mPATTERN 884 PASS						[m
+[1;32mPATTERN 885 PASS						[m
+[1;32mPATTERN 886 PASS						[m
+[1;32mPATTERN 887 PASS						[m
+[1;32mPATTERN 888 PASS						[m
+[1;32mPATTERN 889 PASS						[m
+[1;32mPATTERN 890 PASS						[m
+[1;32mPATTERN 891 PASS						[m
+[1;32mPATTERN 892 PASS						[m
+[1;32mPATTERN 893 PASS						[m
+[1;32mPATTERN 894 PASS						[m
+[1;32mPATTERN 895 PASS						[m
+[1;32mPATTERN 896 PASS						[m
+[1;32mPATTERN 897 PASS						[m
+[1;32mPATTERN 898 PASS						[m
+[1;32mPATTERN 899 PASS						[m
+[1;32mPATTERN 900 PASS						[m
+[1;32mPATTERN 901 PASS						[m
+[1;32mPATTERN 902 PASS						[m
+[1;32mPATTERN 903 PASS						[m
+[1;32mPATTERN 904 PASS						[m
+[1;32mPATTERN 905 PASS						[m
+[1;32mPATTERN 906 PASS						[m
+[1;32mPATTERN 907 PASS						[m
+[1;32mPATTERN 908 PASS						[m
+[1;32mPATTERN 909 PASS						[m
+[1;32mPATTERN 910 PASS						[m
+[1;32mPATTERN 911 PASS						[m
+[1;32mPATTERN 912 PASS						[m
+[1;32mPATTERN 913 PASS						[m
+[1;32mPATTERN 914 PASS						[m
+[1;32mPATTERN 915 PASS						[m
+[1;32mPATTERN 916 PASS						[m
+[1;32mPATTERN 917 PASS						[m
+[1;32mPATTERN 918 PASS						[m
+[1;32mPATTERN 919 PASS						[m
+[1;32mPATTERN 920 PASS						[m
+[1;32mPATTERN 921 PASS						[m
+[1;32mPATTERN 922 PASS						[m
+[1;32mPATTERN 923 PASS						[m
+[1;32mPATTERN 924 PASS						[m
+[1;32mPATTERN 925 PASS						[m
+[1;32mPATTERN 926 PASS						[m
+[1;32mPATTERN 927 PASS						[m
+[1;32mPATTERN 928 PASS						[m
+[1;32mPATTERN 929 PASS						[m
+[1;32mPATTERN 930 PASS						[m
+[1;32mPATTERN 931 PASS						[m
+[1;32mPATTERN 932 PASS						[m
+[1;32mPATTERN 933 PASS						[m
+[1;32mPATTERN 934 PASS						[m
+[1;32mPATTERN 935 PASS						[m
+[1;32mPATTERN 936 PASS						[m
+[1;32mPATTERN 937 PASS						[m
+[1;32mPATTERN 938 PASS						[m
+[1;32mPATTERN 939 PASS						[m
+[1;32mPATTERN 940 PASS						[m
+[1;32mPATTERN 941 PASS						[m
+[1;32mPATTERN 942 PASS						[m
+[1;32mPATTERN 943 PASS						[m
+[1;32mPATTERN 944 PASS						[m
+[1;32mPATTERN 945 PASS						[m
+[1;32mPATTERN 946 PASS						[m
+[1;32mPATTERN 947 PASS						[m
+[1;32mPATTERN 948 PASS						[m
+[1;32mPATTERN 949 PASS						[m
+[1;32mPATTERN 950 PASS						[m
+[1;32mPATTERN 951 PASS						[m
+[1;32mPATTERN 952 PASS						[m
+[1;32mPATTERN 953 PASS						[m
+[1;32mPATTERN 954 PASS						[m
+[1;32mPATTERN 955 PASS						[m
+[1;32mPATTERN 956 PASS						[m
+[1;32mPATTERN 957 PASS						[m
+[1;32mPATTERN 958 PASS						[m
+[1;32mPATTERN 959 PASS						[m
+[1;32mPATTERN 960 PASS						[m
+[1;32mPATTERN 961 PASS						[m
+[1;32mPATTERN 962 PASS						[m
+[1;32mPATTERN 963 PASS						[m
+[1;32mPATTERN 964 PASS						[m
+[1;32mPATTERN 965 PASS						[m
+[1;32mPATTERN 966 PASS						[m
+[1;32mPATTERN 967 PASS						[m
+[1;32mPATTERN 968 PASS						[m
+[1;32mPATTERN 969 PASS						[m
+[1;32mPATTERN 970 PASS						[m
+[1;32mPATTERN 971 PASS						[m
+[1;32mPATTERN 972 PASS						[m
+[1;32mPATTERN 973 PASS						[m
+[1;32mPATTERN 974 PASS						[m
+[1;32mPATTERN 975 PASS						[m
+[1;32mPATTERN 976 PASS						[m
+[1;32mPATTERN 977 PASS						[m
+[1;32mPATTERN 978 PASS						[m
+[1;32mPATTERN 979 PASS						[m
+[1;32mPATTERN 980 PASS						[m
+[1;32mPATTERN 981 PASS						[m
+[1;32mPATTERN 982 PASS						[m
+[1;32mPATTERN 983 PASS						[m
+[1;32mPATTERN 984 PASS						[m
+[1;32mPATTERN 985 PASS						[m
+[1;32mPATTERN 986 PASS						[m
+[1;32mPATTERN 987 PASS						[m
+[1;32mPATTERN 988 PASS						[m
+[1;32mPATTERN 989 PASS						[m
+[1;32mPATTERN 990 PASS						[m
+[1;32mPATTERN 991 PASS						[m
+[1;32mPATTERN 992 PASS						[m
+[1;32mPATTERN 993 PASS						[m
+[1;32mPATTERN 994 PASS						[m
+[1;32mPATTERN 995 PASS						[m
+[1;32mPATTERN 996 PASS						[m
+[1;32mPATTERN 997 PASS						[m
+[1;32mPATTERN 998 PASS						[m
+[1;32mPATTERN 999 PASS						[m
+[1;35m========================================================
+                      Congratulations!!
+                     All Pattern Test Pass
+                     Cycle time = 5  ns
+                     Total latency = 1007 cycles
+======================================================== [1;0m
+$finish called from file "PATTERN.v", line 211.
+$finish at simulation time              5047500
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 5047500 ps
+CPU Time:      4.640 seconds;       Data structure size:   3.0Mb
+Fri May 17 20:47:53 2024
+CPU time: 2.277 seconds to compile + .510 seconds to elab + .653 seconds to link + 4.686 seconds in simulation

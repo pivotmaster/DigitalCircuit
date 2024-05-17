@@ -1,0 +1,19 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Fri May 17 20:41:39 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      1
+    Unconnected ports (LINT-28)                                     1
+
+Nets                                                                1
+    Unloaded nets (LINT-2)                                          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'P_MUL', net 'net10' driven by pin 'C864/Z' has no loads. (LINT-2)
+Warning: In design 'P_MUL', port 'in_valid' is not connected to any nets. (LINT-28)
+1

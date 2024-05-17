@@ -1,0 +1,46 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/RAID2/COURSE/DCS/DCS111/Lab09/01_RTL/P_MUL.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_P_MUL"
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/I_P_MUL/A1\[23:0\]} \
+{/TESTBED/I_P_MUL/A2\[23:0\]} \
+{/TESTBED/I_P_MUL/A\[47:0\]} \
+{/TESTBED/I_P_MUL/B1\[23:0\]} \
+{/TESTBED/I_P_MUL/B2\[23:0\]} \
+{/TESTBED/I_P_MUL/clk} \
+{/TESTBED/I_P_MUL/in_1\[46:0\]} \
+{/TESTBED/I_P_MUL/in_2\[46:0\]} \
+{/TESTBED/I_P_MUL/in_3\[47:0\]} \
+{/TESTBED/I_P_MUL/in_valid} \
+{/TESTBED/I_P_MUL/next_state\[1:0\]} \
+{/TESTBED/I_P_MUL/out\[95:0\]} \
+{/TESTBED/I_P_MUL/out_valid} \
+{/TESTBED/I_P_MUL/rst_n} \
+{/TESTBED/I_P_MUL/state\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 )} 
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvResizeWindow -win $_nWave1 0 23 1536 793
+wvSetCursor -win $_nWave1 4287.285044 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 4025.294195 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvSetCursor -win $_nWave1 4225.110748 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
